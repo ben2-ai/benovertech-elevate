@@ -66,13 +66,13 @@ function Printing() {
     e.preventDefault();
     const lines = [
       "Hello BENOVERTECH, I would like a print quote.",
-      `Name: ${values.name ?? ""}`,
-      `Phone: ${values.phone ?? ""}`,
-      `Item: ${values.item ?? ""}`,
-      `Quantity: ${values.quantity ?? ""}`,
-      `Size: ${values.size ?? ""}`,
-      `Finishing: ${values.finishing ?? ""}`,
-      `Message: ${values.message ?? ""}`,
+      `Name: ${values["name"] ?? ""}`,
+      `Phone: ${values["phone"] ?? ""}`,
+      `Item: ${values["item"] ?? ""}`,
+      `Quantity: ${values["quantity"] ?? ""}`,
+      `Size: ${values["size"] ?? ""}`,
+      `Finishing: ${values["finishing"] ?? ""}`,
+      `Message: ${values["message"] ?? ""}`,
     ];
     window.open(waLink(lines.join("\n")), "_blank", "noopener,noreferrer");
   };
@@ -144,7 +144,7 @@ function Printing() {
                 rows={4}
                 maxLength={1000}
                 placeholder="Tell us anything else about the job"
-                value={values.message ?? ""}
+                value={values["message"] ?? ""}
                 onChange={(e) => update("message", e.target.value)}
                 className="mt-2 w-full rounded-xl border border-input bg-background px-4 py-3 text-sm font-normal outline-none transition-shadow focus:ring-2 focus:ring-ring"
               />

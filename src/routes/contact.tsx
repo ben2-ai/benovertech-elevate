@@ -32,10 +32,10 @@ function Contact() {
     e.preventDefault();
     const text = [
       "Hello BENOVERTECH, I would like to make an enquiry.",
-      `Name: ${values.name ?? ""}`,
-      `Phone: ${values.phone ?? ""}`,
-      `Email: ${values.email ?? ""}`,
-      `Message: ${values.message ?? ""}`,
+      `Name: ${values["name"] ?? ""}`,
+      `Phone: ${values["phone"] ?? ""}`,
+      `Email: ${values["email"] ?? ""}`,
+      `Message: ${values["message"] ?? ""}`,
     ].join("\n");
     window.open(waLink(text), "_blank", "noopener,noreferrer");
   };
@@ -113,7 +113,7 @@ function Contact() {
                 <input
                   required
                   maxLength={100}
-                  value={values.name ?? ""}
+                  value={values["name"] ?? ""}
                   onChange={(e) => update("name", e.target.value)}
                   className="mt-2 w-full rounded-xl border border-input bg-background px-4 py-3 text-sm font-normal outline-none focus:ring-2 focus:ring-ring"
                 />
@@ -124,7 +124,7 @@ function Contact() {
                   required
                   type="tel"
                   maxLength={20}
-                  value={values.phone ?? ""}
+                  value={values["phone"] ?? ""}
                   onChange={(e) => update("phone", e.target.value)}
                   className="mt-2 w-full rounded-xl border border-input bg-background px-4 py-3 text-sm font-normal outline-none focus:ring-2 focus:ring-ring"
                 />
@@ -134,7 +134,7 @@ function Contact() {
                 <input
                   type="email"
                   maxLength={255}
-                  value={values.email ?? ""}
+                  value={values["email"] ?? ""}
                   onChange={(e) => update("email", e.target.value)}
                   className="mt-2 w-full rounded-xl border border-input bg-background px-4 py-3 text-sm font-normal outline-none focus:ring-2 focus:ring-ring"
                 />
@@ -145,7 +145,7 @@ function Contact() {
                   required
                   rows={5}
                   maxLength={1000}
-                  value={values.message ?? ""}
+                  value={values["message"] ?? ""}
                   onChange={(e) => update("message", e.target.value)}
                   className="mt-2 w-full rounded-xl border border-input bg-background px-4 py-3 text-sm font-normal outline-none focus:ring-2 focus:ring-ring"
                 />

@@ -1,0 +1,14 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" fill="#F3F7FB"/>
+  <rect x="60" y="70" width="1080" height="760" rx="30" fill="#FFFFFF" stroke="#C6D9F7" stroke-width="3"/>
+  <rect x="90" y="110" width="260" height="620" rx="22" fill="#123354"/>
+  <rect x="130" y="165" width="180" height="22" rx="11" fill="#E4EEFF" fill-opacity="0.9"/>
+  <rect x="130" y="220" width="140" height="18" rx="9" fill="#8FB6FF" fill-opacity="0.85"/>
+  <rect x="130" y="280" width="160" height="18" rx="9" fill="#8FB6FF" fill-opacity="0.7"/>
+  <rect x="130" y="340" width="150" height="18" rx="9" fill="#8FB6FF" fill-opacity="0.7"/>
+  <rect x="420" y="145" width="560" height="110" rx="18" fill="#EAF3FF"/>
+  <rect x="420" y="290" width="220" height="170" rx="20" fill="#9BC4FF" fill-opacity="0.35"/>
+  <rect x="670" y="290" width="310" height="170" rx="20" fill="#DCEEFF"/>
+  <rect x="420" y="500" width="560" height="150" rx="18" fill="#123354"/>
+  <text x="455" y="657" fill="#FFFFFF" font-family="Arial, Helvetica, sans-serif" font-size="44" font-weight="700">School Portal</text>
+</svg>

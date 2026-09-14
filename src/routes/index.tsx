@@ -94,7 +94,7 @@ const gadgets = [
     featureCard: true,
   },
   {
-    image: "/benovertech%20smart%20watches.png",
+    image: "/Benovertech%20Smart%20watch.png",
     name: "Smartwatches",
     spec: "Fitness tracking and notifications",
     icon: Watch,

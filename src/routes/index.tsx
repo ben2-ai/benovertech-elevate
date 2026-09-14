@@ -14,7 +14,6 @@ import {
   Wallet,
   Watch,
 } from "lucide-react";
-import hero from "@/assets/hero.jpg";
 import design from "@/assets/service-design.jpg";
 import print from "@/assets/service-print.jpg";
 import tech from "@/assets/service-tech.jpg";
@@ -151,8 +150,8 @@ function Home() {
           <div className="relative">
             <div className="overflow-hidden rounded-3xl border border-white/10 shadow-lift">
               <img
-                src={hero}
-                alt="Brand design work, printed materials, a laptop, smartphone and earbuds"
+                src="/overall%20shop%20snap.png"
+                alt="BENOVERTECH gadget and phone shop in Lagos"
                 width={1600}
                 height={1200}
                 className="h-full w-full object-cover"

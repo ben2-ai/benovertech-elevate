@@ -14,7 +14,6 @@ import {
   Wallet,
   Watch,
 } from "lucide-react";
-import pPhone from "@/assets/p-phone.jpg";
 import pLaptop from "@/assets/p-laptop.jpg";
 import pWatch from "@/assets/p-watch.jpg";
 import pAudio from "@/assets/p-audio.jpg";
@@ -66,7 +65,7 @@ const services = [
     icon: Smartphone,
     title: "Tech Store",
     text: "Phones, laptops, tablets, smartwatches, earbuds, chargers and other everyday accessories.",
-    image: "/overall%20shop%20snap.png",
+    image: "/benovertech%20overall%20shop%20snap.png",
     to: "/tech-store" as const,
   },
 ];
@@ -81,9 +80,25 @@ const reasons = [
 ];
 
 const gadgets = [
-  { image: pPhone, name: "Smartphones", spec: "Latest and neat pre-owned devices", icon: Smartphone },
-  { image: pLaptop, name: "Laptops", spec: "Work, school and business machines", icon: Laptop },
-  { image: pWatch, name: "Smartwatches", spec: "Fitness tracking and notifications", icon: Watch },
+  {
+    image: "/benovertech%20iphone%20gadgets%20showglass",
+    name: "Smartphones",
+    spec: "Latest and neat pre-owned devices",
+    icon: Smartphone,
+  },
+  {
+    image: "/benovertech%20Laptops%20in%20showglass",
+    name: "Laptops",
+    spec: "Work, school and business\nmachines",
+    icon: Laptop,
+    featureCard: true,
+  },
+  {
+    image: "/benovertech%20smart%20watches.png",
+    name: "Smartwatches",
+    spec: "Fitness tracking and notifications",
+    icon: Watch,
+  },
   { image: pAudio, name: "Earbuds & Headphones", spec: "Wireless sound with strong bass", icon: Headphones },
 ];
 
@@ -132,10 +147,12 @@ function Home() {
             <h1 className="mt-5 text-4xl font-extrabold leading-[1.08] text-white sm:text-5xl lg:text-6xl">
               Good design. <span className="text-gold-deep">Neat printing.</span> Home of Quality Gadgets.
             </h1>
-            <p className="mt-6 max-w-xl text-base leading-relaxed text-white/70">
-              From brand designs and quality printing to phones, laptops, and accessories, we help
-              you bring your ideas to life, get your work printed neatly, and stay connected with
-              the right gadgets.
+            <p className="mt-6 max-w-xl text-base leading-[1.8] text-white/70">
+              This is the official site for Benovertech. Here, we handle brand graphics designs,
+              quality printing, and supply all kinds of phones, laptops, and accessories.
+              <span className="mt-3 block">
+                We help you bring your ideas to life. Choose Benovertech — choose lifestyle.
+              </span>
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <WhatsAppButton className="w-full sm:w-auto shadow-glow-teal">Chat with us</WhatsAppButton>
@@ -152,7 +169,7 @@ function Home() {
           <div className="relative">
             <div className="overflow-hidden rounded-3xl border border-white/10 shadow-lift">
               <img
-                src="/overall%20shop%20snap.png"
+                src="/benovertech%20overall%20shop%20snap.png"
                 alt="BENOVERTECH gadget and phone shop in Lagos"
                 width={1600}
                 height={1200}
@@ -231,19 +248,37 @@ function Home() {
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {gadgets.map((g, i) => (
             <Reveal key={g.name} delay={i * 70}>
-              <div className="card-surface h-full overflow-hidden">
+              <div
+                className={`h-full overflow-hidden ${
+                  g.featureCard
+                    ? "rounded-[2rem] border border-sky-200 bg-[#f3f4f6] p-2 shadow-none"
+                    : "card-surface"
+                }`}
+              >
                 <img
                   src={g.image}
                   alt={g.name}
                   width={800}
                   height={800}
                   loading="lazy"
-                  className="aspect-square w-full bg-secondary object-cover"
+                  className={
+                    g.featureCard
+                      ? "aspect-[1.65] w-full rounded-[1.5rem] border border-[#cfe2fb] bg-[#f4f5f7] object-cover object-center p-0 shadow-[inset_0_0_0_1px_rgba(139,167,255,0.12)]"
+                      : "aspect-square w-full bg-secondary object-cover"
+                  }
                 />
-                <div className="p-5">
-                  <h3 className="text-base font-semibold">{g.name}</h3>
-                  <p className="mt-1 text-sm text-muted-foreground">{g.spec}</p>
-                  <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-gold-deep">
+                <div className={`p-5 ${g.featureCard ? "px-2 pb-3 pt-4" : ""}`}>
+                  <h3 className={`font-semibold ${g.featureCard ? "text-[2rem] leading-[1.1] text-foreground" : "text-base"}`}>
+                    {g.name}
+                  </h3>
+                  <p className={`mt-1 text-sm text-muted-foreground ${g.featureCard ? "whitespace-pre-line text-[1.05rem] leading-[1.2] text-foreground/80" : ""}`}>
+                    {g.spec}
+                  </p>
+                  <p
+                    className={`mt-3 text-xs font-semibold uppercase tracking-wide ${
+                      g.featureCard ? "text-[#1c79e6]" : "text-gold-deep"
+                    }`}
+                  >
                     Available in our shop
                   </p>
                 </div>

@@ -65,7 +65,7 @@ function About() {
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <Reveal>
             <img
-              src="/overall%20shop%20snap.png"
+              src="/benovertech%20overall%20shop%20snap.png"
               alt="BENOVERTECH shop interior in Lagos"
               width={1024}
               height={768}

@@ -3,14 +3,6 @@ import { useMemo, useState } from "react";
 import { Search, ShieldCheck } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 import { ContactStrip, Section, SectionHead, WhatsAppButton } from "@/components/site/ui";
-import pPhone from "@/assets/p-phone.jpg";
-import pLaptop from "@/assets/p-laptop.jpg";
-import pTablet from "@/assets/p-tablet.jpg";
-import pWatch from "@/assets/p-watch.jpg";
-import pAudio from "@/assets/p-audio.jpg";
-import pCharger from "@/assets/p-charger.jpg";
-import pPowerbank from "@/assets/p-powerbank.jpg";
-import pCable from "@/assets/p-cable.jpg";
 
 export const Route = createFileRoute("/tech-store")({
   head: () => ({
@@ -47,24 +39,114 @@ const categories = [
 type Product = { name: string; category: string; spec: string; image: string };
 
 const products: Product[] = [
-  { name: "Flagship Android Smartphone", category: "Smartphones", spec: "6.7in AMOLED • 8GB RAM • 256GB • 5G", image: pPhone },
-  { name: "Everyday Smartphone", category: "Smartphones", spec: "6.5in display • 4GB RAM • 128GB • Long battery", image: pPhone },
-  { name: "Premium Slim Laptop", category: "Laptops", spec: "Core i7 • 16GB RAM • 512GB SSD • 14in", image: pLaptop },
-  { name: "Student Laptop", category: "Laptops", spec: "Core i5 • 8GB RAM • 256GB SSD • 15.6in", image: pLaptop },
-  { name: "Business Tablet", category: "Tablets", spec: "11in display • Stylus support • Wi-Fi + LTE", image: pTablet },
-  { name: "Compact Tablet", category: "Tablets", spec: "8in display • 64GB • Great for reading", image: pTablet },
-  { name: "Fitness Smartwatch", category: "Smartwatches", spec: "Heart rate • Sleep tracking • Water resistant", image: pWatch },
-  { name: "Classic Smartwatch", category: "Smartwatches", spec: "Calls • Notifications • 7-day battery", image: pWatch },
-  { name: "Wireless Earbuds", category: "Earbuds and Headphones", spec: "Noise cancelling • Charging case • Bluetooth 5.3", image: pAudio },
-  { name: "Over-Ear Headphones", category: "Earbuds and Headphones", spec: "Deep bass • Long play time • Foldable", image: pAudio },
-  { name: "Fast Charging Adapter", category: "Chargers", spec: "20W–65W USB-C • Safe charging chip", image: pCharger },
-  { name: "Multi-Port Charger", category: "Chargers", spec: "Charge phone and laptop together", image: pCharger },
-  { name: "Slim Power Bank", category: "Power Banks", spec: "10,000mAh • Dual output • Pocket size", image: pPowerbank },
-  { name: "High Capacity Power Bank", category: "Power Banks", spec: "20,000mAh • Fast charge • LED level", image: pPowerbank },
-  { name: "Braided USB-C Cable", category: "Cables", spec: "Fast data and charge • Durable braid", image: pCable },
-  { name: "Lightning & Micro USB Cables", category: "Cables", spec: "Assorted lengths • Strong connectors", image: pCable },
-  { name: "Phone Stand", category: "Accessories", spec: "Adjustable • Foldable aluminium", image: pCable },
-  { name: "Screen Protector & Case", category: "Accessories", spec: "Tempered glass • Shock-absorbing case", image: pCable },
+  {
+    name: "Flagship Android Smartphone",
+    category: "Smartphones",
+    spec: "6.7in AMOLED • 8GB RAM • 256GB • 5G",
+    image: "/Apple%20phones%20in%20showglass.jfif",
+  },
+  {
+    name: "Everyday Smartphone",
+    category: "Smartphones",
+    spec: "6.5in display • 4GB RAM • 128GB • Long battery",
+    image: "/Apple%20phones%20in%20showglass.jfif",
+  },
+  {
+    name: "Premium Slim Laptop",
+    category: "Laptops",
+    spec: "Core i7 • 16GB RAM • 512GB SSD • 14in",
+    image: "/benovertech%20Laptops%20in%20showglass",
+  },
+  {
+    name: "Student Laptop",
+    category: "Laptops",
+    spec: "Core i5 • 8GB RAM • 256GB SSD • 15.6in",
+    image: "/benovertech%20Laptops%20in%20showglass",
+  },
+  {
+    name: "Business Tablet",
+    category: "Tablets",
+    spec: "11in display • Stylus support • Wi-Fi + LTE",
+    image: "/All%20phone%20accosseries.png",
+  },
+  {
+    name: "Compact Tablet",
+    category: "Tablets",
+    spec: "8in display • 64GB • Great for reading",
+    image: "/All%20phone%20accosseries.png",
+  },
+  {
+    name: "Fitness Smartwatch",
+    category: "Smartwatches",
+    spec: "Heart rate • Sleep tracking • Water resistant",
+    image: "/benovertech%20smart%20watches.png",
+  },
+  {
+    name: "Classic Smartwatch",
+    category: "Smartwatches",
+    spec: "Calls • Notifications • 7-day battery",
+    image: "/benovertech%20smart%20watches.png",
+  },
+  {
+    name: "Wireless Earbuds",
+    category: "Earbuds and Headphones",
+    spec: "Noise cancelling • Charging case • Bluetooth 5.3",
+    image: "/Benovertech%20Laptop%20Accessories%20Display.png",
+  },
+  {
+    name: "Over-Ear Headphones",
+    category: "Earbuds and Headphones",
+    spec: "Deep bass • Long play time • Foldable",
+    image: "/Benovertech%20Laptop%20Accessories%20Display.png",
+  },
+  {
+    name: "Fast Charging Adapter",
+    category: "Chargers",
+    spec: "20W–65W USB-C • Safe charging chip",
+    image: "/Benovertech%20Laptop%20Accessories%20Display.png",
+  },
+  {
+    name: "Multi-Port Charger",
+    category: "Chargers",
+    spec: "Charge phone and laptop together",
+    image: "/Benovertech%20Laptop%20Accessories%20Display.png",
+  },
+  {
+    name: "Slim Power Bank",
+    category: "Power Banks",
+    spec: "10,000mAh • Dual output • Pocket size",
+    image: "/All%20phone%20accosseries.png",
+  },
+  {
+    name: "High Capacity Power Bank",
+    category: "Power Banks",
+    spec: "20,000mAh • Fast charge • LED level",
+    image: "/All%20phone%20accosseries.png",
+  },
+  {
+    name: "Braided USB-C Cable",
+    category: "Cables",
+    spec: "Fast data and charge • Durable braid",
+    image: "/All%20phone%20accosseries.png",
+  },
+  {
+    name: "Lightning & Micro USB Cables",
+    category: "Cables",
+    spec: "Assorted lengths • Strong connectors",
+    image: "/All%20phone%20accosseries.png",
+  },
+  {
+    name: "Phone Stand",
+    category: "Accessories",
+    spec: "Adjustable • Foldable aluminium",
+    image: "/All%20phone%20accosseries.png",
+  },
+  {
+    name: "Screen Protector & Case",
+    category: "Accessories",
+    spec: "Tempered glass • Shock-absorbing case",
+    image: "/All%20phone%20accosseries.png",
+  },
 ];
 
 function TechStore() {

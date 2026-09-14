@@ -45,8 +45,8 @@ export function Nav() {
         }`}
       >
         <Link to="/" className="flex min-w-0 items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center">
-            <img src="/Brand%20logo.png" alt="BENOVERTECH logo" className="h-9 w-9 object-contain" />
+          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white p-1.5 shadow-lift ring-1 ring-white/70">
+            <img src="/brand%20Logo.png" alt="BENOVERTECH logo" className="h-full w-full object-contain" />
           </span>
           <span className="min-w-0">
             <span className="block truncate font-display text-base font-extrabold tracking-tight text-white">

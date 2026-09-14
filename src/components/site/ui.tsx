@@ -95,11 +95,11 @@ export function ContactStrip() {
           <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
             <WhatsAppButton className="w-full sm:w-auto">Chat on WhatsApp</WhatsAppButton>
             <a
-              href={telLink(site.phones[0])}
+              href={telLink(site.phones[0]!)}
               className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/25 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10 sm:w-auto"
             >
               <Phone className="h-4 w-4" />
-              Call {site.phones[0]}
+              Call {site.phones[0]!}
             </a>
           </div>
         </div>

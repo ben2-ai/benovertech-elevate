@@ -99,7 +99,12 @@ const gadgets = [
     spec: "Fitness tracking and notifications",
     icon: Watch,
   },
-  { image: pAudio, name: "Earbuds & Headphones", spec: "Wireless sound with strong bass", icon: Headphones },
+  {
+    image: "/Benovertech%20Laptop%20Accessories%20Display.png",
+    name: "Earbuds & Headphones",
+    spec: "Wireless sound with strong bass",
+    icon: Headphones,
+  },
 ];
 
 const featured = [

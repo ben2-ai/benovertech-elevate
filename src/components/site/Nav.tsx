@@ -34,16 +34,20 @@ export function Nav() {
 
   return (
     <header
-      className={`sticky top-0 z-40 border-b transition-all duration-300 ${
-        scrolled
-          ? "border-border bg-background/85 backdrop-blur-xl shadow-soft"
-          : "border-transparent bg-background/60 backdrop-blur-md"
+      className={`sticky top-0 z-40 px-4 py-3 transition-all duration-300 ${
+        scrolled ? "py-2" : "py-3"
       }`}
     >
-      <nav className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 py-3 sm:px-6 lg:flex lg:justify-between">
+      <nav
+        className={`mx-auto flex max-w-6xl items-center justify-between rounded-2xl border px-4 py-2.5 transition-all duration-300 lg:px-6 ${
+          scrolled
+            ? "border-white/10 bg-card/70 shadow-soft backdrop-blur-xl"
+            : "border-white/5 bg-card/40 backdrop-blur-md"
+        }`}
+      >
         <Link to="/" className="flex min-w-0 items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#0a0a0a] ring-1 ring-white/10 shadow-soft">
-            <img src={logo.url} alt="BENOVERTECH logo" className="h-8 w-8 object-contain" />
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#0a0a0a] ring-1 ring-gold/40 shadow-glow-gold">
+            <img src={logo.url} alt="BENOVERTECH logo" className="h-7 w-7 object-contain" />
           </span>
           <span className="min-w-0">
             <span className="block truncate font-display text-base font-extrabold tracking-tight">
@@ -72,7 +76,7 @@ export function Nav() {
             href={waLink()}
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-2 inline-flex items-center gap-2 rounded-full bg-gradient-gold px-4 py-2 text-sm font-semibold text-primary-foreground shadow-soft transition-transform hover:scale-[1.03]"
+            className="ml-2 inline-flex items-center gap-2 rounded-full bg-gradient-gold px-4 py-2 text-sm font-semibold text-primary-foreground shadow-glow-gold transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lift"
           >
             <MessageCircle className="h-4 w-4" />
             WhatsApp
@@ -91,8 +95,8 @@ export function Nav() {
       </nav>
 
       {open && (
-        <div className="border-t border-border bg-background lg:hidden">
-          <div className="mx-auto flex max-w-6xl flex-col gap-1 px-4 py-4">
+        <div className="mx-auto mt-2 max-w-6xl rounded-2xl border border-border bg-card/95 p-4 shadow-lift backdrop-blur-xl lg:hidden">
+          <div className="flex flex-col gap-1">
             {links.map((l) => (
               <Link
                 key={l.to}
@@ -109,7 +113,7 @@ export function Nav() {
               href={waLink()}
               target="_blank"
               rel="noopener noreferrer"
-              className="mt-2 inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-gold px-4 py-3 text-base font-semibold text-primary-foreground"
+              className="mt-2 inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-gold px-4 py-3 text-base font-semibold text-primary-foreground shadow-glow-gold"
             >
               <MessageCircle className="h-5 w-5" />
               Chat on WhatsApp

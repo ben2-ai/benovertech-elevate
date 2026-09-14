@@ -53,9 +53,10 @@ function About() {
               One trusted company. Three things we do well.
           </h1>
             <p className="mt-6 text-base leading-relaxed text-white/70">
-              BENOVERTECH is a Lagos company for professional graphic design, quality printing, and
-              reliable tech gadgets. We help people and businesses build strong brands, produce neat
-              print materials, and get the right phones, laptops, gadgets, and accessories.
+              BENOVERTECH is a Nigerian company offering professional graphic design, quality
+              printing, and reliable tech gadgets. We help people and businesses bring their ideas
+              to life, create strong brands, get neat print materials, and find the right phones,
+              laptops, gadgets, and accessories.
           </p>
         </div>
       </section>
@@ -75,7 +76,7 @@ function About() {
           <Reveal delay={80}>
               <h2 className="text-3xl font-bold sm:text-4xl">A quick look at us</h2>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                Based in Ago Palace, Lagos, BENOVERTECH brings design, professional printing, and
+                Based in Lagos, Nigeria, BENOVERTECH brings design, professional printing, and
                 dependable technology under one roof. Whether you are starting a small business,
                 planning an event, or changing your phone or laptop, you get clear advice, fair
                 pricing, and work that is finished properly.

@@ -49,6 +49,13 @@ const works = [
     description: "A calm online therapy and relationship coaching platform for individuals and couples.",
     href: "https://coachzinny.vercel.app/",
   },
+  {
+    image: "https://new-covenant-studend-reg-admin-1.onrender.com/logo.png",
+    title: "New Covenant Foundation School Portal",
+    category: "Web Projects",
+    description: "An administrative portal for managing student registration and school records.",
+    href: "https://new-covenant-studend-reg-admin-1.onrender.com/login",
+  },
 ];
 
 function Portfolio() {

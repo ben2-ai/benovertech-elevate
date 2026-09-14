@@ -44,6 +44,13 @@ const services = [
   { icon: Sparkles, title: "Digital Marketing Creatives", text: "Ad banners and visuals made to get results." },
 ];
 
+const advertisingWork = [
+  { image: "/gadget%20flyer%201.jpg", title: "Website promotion flyer" },
+  { image: "/gadget%20flyer%202.jpg", title: "Gadget campaign flyer" },
+  { image: "/gadget%20flyer%203.jpg", title: "Smartphone promotion flyer" },
+  { image: "/gadget%20flyer%204.jpg", title: "Gadget brand flyer" },
+];
+
 function Graphics() {
   return (
     <>
@@ -77,6 +84,33 @@ function Graphics() {
                 <h3 className="mt-4 text-lg font-semibold">{s.title}</h3>
                 <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.text}</p>
               </div>
+            </Reveal>
+          ))}
+        </div>
+      </Section>
+
+      <Section className="bg-secondary/50">
+        <SectionHead
+          eyebrow="Recent advertising work"
+          title="Flyers made to get attention"
+          text="A few examples of promotional designs created for brands and businesses."
+        />
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+          {advertisingWork.map((work, i) => (
+            <Reveal key={work.title} delay={i * 60}>
+              <figure className="card-surface overflow-hidden">
+                <div className="bg-white p-3">
+                  <img
+                    src={work.image}
+                    alt={work.title}
+                    width={768}
+                    height={1024}
+                    loading="lazy"
+                    className="aspect-[3/4] w-full object-contain"
+                  />
+                </div>
+                <figcaption className="px-5 py-4 text-sm font-semibold">{work.title}</figcaption>
+              </figure>
             </Reveal>
           ))}
         </div>

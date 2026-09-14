@@ -24,7 +24,7 @@ export const Route = createFileRoute("/tech-store")({
       { property: "og:title", content: "BENOVERTECH Tech Store" },
       {
         property: "og:description",
-        content: "Reliable gadgets and accessories in Ago Palace, Lagos. Order on WhatsApp.",
+        content: "Reliable gadgets and accessories from BENOVERTECH, Lagos, Nigeria. Order on WhatsApp.",
       },
     ],
   }),

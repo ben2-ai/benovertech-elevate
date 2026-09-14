@@ -14,15 +14,10 @@ import {
   Wallet,
   Watch,
 } from "lucide-react";
-import design from "@/assets/service-design.jpg";
 import pPhone from "@/assets/p-phone.jpg";
 import pLaptop from "@/assets/p-laptop.jpg";
 import pWatch from "@/assets/p-watch.jpg";
 import pAudio from "@/assets/p-audio.jpg";
-import port1 from "@/assets/port-1.jpg";
-import port2 from "@/assets/port-2.jpg";
-import port3 from "@/assets/port-3.jpg";
-import port6 from "@/assets/port-6.jpg";
 import { Reveal } from "@/components/site/Reveal";
 import {
   ContactStrip,
@@ -39,7 +34,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Creative graphic design, quality printing and reliable phones, laptops and accessories. BENOVERTECH, Ago Palace, Lagos.",
+          "Creative graphic design, quality printing and reliable phones, laptops and accessories from BENOVERTECH, Lagos, Nigeria.",
       },
       { property: "og:title", content: "BENOVERTECH — Design, Printing & Tech Gadgets in Lagos" },
       {
@@ -57,7 +52,7 @@ const services = [
     icon: Palette,
     title: "Graphic Design",
     text: "Logos, brand identity, flyers, social media designs and adverts that help your business stand out.",
-    image: design,
+    image: "/Graphic%20designing%20samples.png",
     to: "/graphics" as const,
   },
   {
@@ -92,7 +87,12 @@ const gadgets = [
   { image: pAudio, name: "Earbuds & Headphones", spec: "Wireless sound with strong bass", icon: Headphones },
 ];
 
-const featured = [port1, port2, port3, port6];
+const featured = [
+  { image: "/Printed%20banner.jpg", alt: "Printed banner by BENOVERTECH" },
+  { image: "/printed%20crads.jpeg", alt: "Printed cards by BENOVERTECH" },
+  { image: "/printed%20flyers.jpeg", alt: "Printed flyers by BENOVERTECH" },
+  { image: "/printed%20job%201.jpeg", alt: "Completed printing job by BENOVERTECH" },
+];
 
 const testimonials = [
   {
@@ -269,12 +269,12 @@ function Home() {
           text="Have a look at the kind of work we do for brands, businesses, and events."
         />
         <div className="mt-12 grid grid-cols-2 gap-4 lg:grid-cols-4">
-          {featured.map((img, i) => (
-            <Reveal key={i} delay={i * 70}>
+          {featured.map((work, i) => (
+            <Reveal key={work.image} delay={i * 70}>
               <div className="group overflow-hidden rounded-2xl border border-border shadow-soft">
                 <img
-                  src={img}
-                  alt="BENOVERTECH portfolio work"
+                  src={work.image}
+                  alt={work.alt}
                   width={900}
                   height={900}
                   loading="lazy"

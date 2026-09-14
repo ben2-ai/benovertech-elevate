@@ -8,11 +8,11 @@ import { site, telLink, waLink } from "@/lib/site";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact BENOVERTECH — Ago Palace, Lagos" },
+      { title: "Contact BENOVERTECH — Lagos, Nigeria" },
       {
         name: "description",
         content:
-          "Visit No. 14 Benson Ojukwu Street, Ago Palace, Lagos. Call 08107271610 or 09120253807, or message us on WhatsApp.",
+          "Connect with BENOVERTECH in Lagos, Nigeria. Call 08107271610 or 09120253807, or message us on WhatsApp.",
       },
       { property: "og:title", content: "Contact BENOVERTECH" },
       {

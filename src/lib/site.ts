@@ -2,7 +2,7 @@ export const site = {
   name: "BENOVERTECH",
   tagline: "Design • Printing • Tech",
   message: "We design, print, and help you choose the right tech.",
-  address: "No. 14 Benson Ojukwu Street, Ago Palace, Lagos State",
+  address: "Lagos, Nigeria",
   hours: "Open Monday to Saturday, 8am to 6pm",
   email: "benovertech@gmail.com",
   phones: ["08107271610", "09120253807"],

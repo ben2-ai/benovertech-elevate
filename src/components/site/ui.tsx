@@ -90,9 +90,9 @@ export function ContactStrip() {
           <span className="pointer-events-none absolute -left-1/4 -top-1/2 h-full w-1/2 rounded-full bg-teal/10 blur-[100px]" />
           <span className="pointer-events-none absolute -bottom-1/2 -right-1/4 h-full w-1/2 rounded-full bg-gold/10 blur-[100px]" />
           <div className="relative z-10">
-            <h2 className="text-3xl font-bold text-white sm:text-4xl">Let's get started today</h2>
+            <h2 className="text-3xl font-bold text-white sm:text-4xl">Let&apos;s get your job started</h2>
             <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-white/70">
-              Send us a message on WhatsApp or call directly. We reply quickly during opening hours —{" "}
+              Send us a message on WhatsApp or call us directly. We reply quickly during opening hours —{" "}
               {site.hours.toLowerCase()}.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">

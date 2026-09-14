@@ -16,8 +16,8 @@ export function Footer() {
             </div>
           </div>
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-white/70">
-            {site.message} A modern multiservice company for professional graphic design, quality
-            printing, and reliable tech gadgets in Lagos.
+            {site.message} We handle your design, printing, and gadget needs in Lagos, with clear
+            advice and work we can all be proud of.
           </p>
         </div>
 
@@ -42,7 +42,7 @@ export function Footer() {
         </div>
 
         <div>
-          <h3 className="text-sm font-semibold uppercase tracking-widest text-gold">Reach us</h3>
+          <h3 className="text-sm font-semibold uppercase tracking-widest text-gold">Find us</h3>
           <ul className="mt-4 space-y-3 text-sm text-white/70">
             <li className="flex gap-3">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-teal" />
@@ -74,7 +74,7 @@ export function Footer() {
 
       <div className="border-t border-white/10">
         <div className="mx-auto max-w-6xl px-4 py-6 text-center text-xs text-white/50 sm:px-6">
-          © {new Date().getFullYear()} BENOVERTECH. Inventing the future.
+          © {new Date().getFullYear()} BENOVERTECH. Good work, done properly.
         </div>
       </div>
     </footer>

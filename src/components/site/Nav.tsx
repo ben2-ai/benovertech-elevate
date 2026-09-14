@@ -6,12 +6,12 @@ import { waLink } from "@/lib/site";
 
 const links = [
   { to: "/", label: "Home" },
-  { to: "/about", label: "About" },
-  { to: "/graphics", label: "Graphics" },
+  { to: "/about", label: "About us" },
+  { to: "/graphics", label: "Design" },
   { to: "/printing", label: "Printing" },
-  { to: "/tech-store", label: "Tech Store" },
-  { to: "/portfolio", label: "Portfolio" },
-  { to: "/contact", label: "Contact" },
+  { to: "/tech-store", label: "Tech shop" },
+  { to: "/portfolio", label: "Our work" },
+  { to: "/contact", label: "Reach us" },
 ] as const;
 
 export function Nav() {
@@ -79,7 +79,7 @@ export function Nav() {
             className="ml-2 inline-flex items-center gap-2 rounded-full bg-gradient-gold px-4 py-2 text-sm font-semibold text-primary-foreground shadow-glow-gold transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lift"
           >
             <MessageCircle className="h-4 w-4" />
-            WhatsApp
+            Chat with us
           </a>
         </div>
 
@@ -116,7 +116,7 @@ export function Nav() {
               className="mt-2 inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-gold px-4 py-3 text-base font-semibold text-primary-foreground shadow-glow-gold"
             >
               <MessageCircle className="h-5 w-5" />
-              Chat on WhatsApp
+              Chat with us
             </a>
           </div>
         </div>

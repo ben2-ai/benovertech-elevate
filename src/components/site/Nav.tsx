@@ -40,8 +40,8 @@ export function Nav() {
       <nav
         className={`mx-auto flex max-w-6xl items-center justify-between rounded-2xl border px-4 py-2.5 transition-all duration-300 lg:px-6 ${
           scrolled
-            ? "border-white/15 bg-black shadow-lift backdrop-blur-xl"
-            : "border-white/15 bg-black backdrop-blur-md"
+            ? "border-white/20 bg-[#8f003f] shadow-lift backdrop-blur-xl"
+            : "border-white/20 bg-[#8f003f] backdrop-blur-md"
         }`}
       >
         <Link to="/" className="flex min-w-0 items-center gap-3" onClick={() => setOpen(false)}>
@@ -94,7 +94,7 @@ export function Nav() {
       </nav>
 
       {open && (
-        <div className="mx-auto mt-2 max-w-6xl rounded-2xl border border-white/15 bg-black p-4 shadow-lift backdrop-blur-xl lg:hidden">
+        <div className="mx-auto mt-2 max-w-6xl rounded-2xl border border-white/20 bg-[#8f003f] p-4 shadow-lift backdrop-blur-xl lg:hidden">
           <div className="flex flex-col gap-1">
             {links.map((l) => (
               <Link

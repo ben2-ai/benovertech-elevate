@@ -15,8 +15,6 @@ import {
   Watch,
 } from "lucide-react";
 import design from "@/assets/service-design.jpg";
-import print from "@/assets/service-print.jpg";
-import tech from "@/assets/service-tech.jpg";
 import pPhone from "@/assets/p-phone.jpg";
 import pLaptop from "@/assets/p-laptop.jpg";
 import pWatch from "@/assets/p-watch.jpg";
@@ -66,14 +64,14 @@ const services = [
     icon: Printer,
     title: "Printing Press",
     text: "Large format printing, banners, business cards, brochures, stickers and branded souvenirs, all done neatly.",
-    image: print,
+    image: "/benovertech%20printing%20press%20snap.jpeg",
     to: "/printing" as const,
   },
   {
     icon: Smartphone,
     title: "Tech Store",
     text: "Phones, laptops, tablets, smartwatches, earbuds, chargers and other everyday accessories.",
-    image: tech,
+    image: "/overall%20shop%20snap.png",
     to: "/tech-store" as const,
   },
 ];
@@ -132,7 +130,7 @@ function Home() {
         <div className="relative z-10 mx-auto grid max-w-6xl gap-10 px-4 pb-16 pt-14 sm:px-6 sm:pb-24 sm:pt-20 lg:grid-cols-2 lg:items-center">
           <div>
             <h1 className="mt-5 text-4xl font-extrabold leading-[1.08] text-white sm:text-5xl lg:text-6xl">
-              Good design. <span className="text-gold-deep">Neat printing.</span> Tech that works.
+              Good design. <span className="text-gold-deep">Neat printing.</span> Home of Quality Gadgets.
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-white/70">
               From brand designs and quality printing to phones, laptops, and accessories, we help

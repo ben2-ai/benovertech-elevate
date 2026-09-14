@@ -2,7 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Eye, Heart, Palette, Printer, Smartphone, Target } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 import { ContactStrip, Section, SectionHead } from "@/components/site/ui";
-import design from "@/assets/service-design.jpg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -65,8 +64,8 @@ function About() {
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <Reveal>
             <img
-              src={design}
-              alt="Design work in progress at BENOVERTECH"
+              src="/overall%20shop%20snap.png"
+              alt="BENOVERTECH shop interior in Lagos"
               width={1024}
               height={768}
               loading="lazy"

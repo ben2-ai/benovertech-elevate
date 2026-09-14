@@ -4,11 +4,11 @@ import {
   BadgeCheck,
   Headphones,
   Laptop,
+  Lightbulb,
   Palette,
   Printer,
   ShieldCheck,
   Smartphone,
-  Sparkles,
   Star,
   Timer,
   Wallet,
@@ -83,7 +83,7 @@ const reasons = [
   { icon: Timer, title: "Quick delivery", text: "We work with your deadline and keep you posted." },
   { icon: Wallet, title: "Fair prices", text: "Straightforward prices that work for your budget." },
   { icon: ShieldCheck, title: "Trusted gadgets", text: "Reliable devices from suppliers we trust." },
-  { icon: Sparkles, title: "Fresh ideas", text: "Good ideas that make your brand look solid and established." },
+  { icon: Lightbulb, title: "Fresh ideas", text: "Good ideas that make your brand look solid and established." },
   { icon: Headphones, title: "Real support", text: "Speak with a real person on WhatsApp or phone during the week." },
 ];
 

@@ -36,11 +36,11 @@ const works = [
   { image: port4, title: "Branded souvenir pack", category: "Branding" },
   { image: port6, title: "Brochures and sticker print", category: "Print Work" },
   {
-    image: "https://babcquotepro.vercel.app/B.A.B.C%20LOGO.png",
-    title: "B.A.B.C Quotation Studio",
+    image: "https://babcofficialsite.vercel.app/",
+    title: "B.A.B.C Official Site",
     category: "Web Projects",
-    description: "A quotation management platform built for smoother business operations.",
-    href: "https://babcquotepro.vercel.app/",
+    description: "Official brand website for B.A.B.C, designed to showcase the business and its offerings.",
+    href: "https://babcofficialsite.vercel.app/",
   },
   {
     image: "https://coachzinny.vercel.app/images/coach-zinny.jpeg",

@@ -151,13 +151,13 @@ function Home() {
         <span className="pointer-events-none absolute -bottom-1/4 -right-1/4 h-full w-1/2 rounded-full bg-gold/10 blur-[140px]" />
         <div className="relative z-10 mx-auto grid max-w-6xl gap-10 px-4 pb-16 pt-14 sm:px-6 sm:pb-24 sm:pt-20 lg:grid-cols-2 lg:items-center">
           <div>
-            <p className="inline-flex items-center rounded-full border border-white/20 bg-white/8 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-white/80">
+            <p className="glass-sheen gentle-pulse premium-glass inline-flex items-center rounded-full border border-white/20 bg-white/8 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-black shadow-soft">
               BENOVERTECH Lagos
             </p>
-            <h1 className="mt-5 text-4xl font-black leading-[0.96] tracking-[-0.05em] text-white sm:text-5xl lg:text-6xl">
-              <span className="block text-gradient-aurora">Design</span>
-              <span className="mt-1 block">Print</span>
-              <span className="mt-1 block text-white">Tech for real life.</span>
+            <h1 className="hero-reveal mt-5 text-4xl font-black leading-[0.96] tracking-[-0.05em] text-white sm:text-5xl lg:text-6xl">
+              <span className="block text-gradient-aurora">We Design,</span>
+              <span className="mt-1 block">We Print</span>
+              <span className="mt-1 block text-white">Home of Quality Gadgets</span>
             </h1>
             <p className="mt-6 max-w-xl text-base leading-[1.8] text-white/70">
               This is the official Benovertech website. We handle brand design, quality printing,
@@ -179,13 +179,13 @@ function Home() {
           </div>
 
           <div className="relative">
-            <div className="overflow-hidden rounded-3xl border border-white/10 shadow-lift">
+            <div className="soft-float premium-glass overflow-hidden rounded-[2rem] border border-white/15 p-2 shadow-lift ring-1 ring-white/10">
               <img
                 src="/benovertech%20overall%20shop%20snap.png"
                 alt="BENOVERTECH gadget and phone shop in Lagos"
                 width={1600}
                 height={1200}
-                className="h-full w-full object-cover"
+                className="h-full w-full rounded-[1.4rem] object-cover"
               />
             </div>
           </div>

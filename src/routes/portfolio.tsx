@@ -75,13 +75,13 @@ function Portfolio() {
       </section>
 
       <Section className="bg-[#f5f7f9]">
-        <div className="flex flex-wrap justify-center gap-2.5">
+        <div className="flex flex-wrap justify-center gap-2">
           {filters.map((f) => (
             <button
               key={f}
               type="button"
               onClick={() => setActive(f)}
-              className={`rounded-full border px-4 py-2 text-sm font-medium transition-all ${
+              className={`rounded-full border px-3.5 py-2 text-sm font-medium transition-all ${
                 active === f
                   ? "border-[#2b6ef6] bg-[#2b6ef6] text-white shadow-[0_8px_18px_rgba(43,110,246,0.18)]"
                   : "border-[#dfe6ef] bg-white text-[#2b3748] hover:border-[#c7d8f8] hover:text-[#1f2d3d]"
@@ -92,23 +92,23 @@ function Portfolio() {
           ))}
         </div>
 
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-7 grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
           {shown.map((w, i) => (
             <Reveal key={w.title} delay={i * 60}>
-              <figure className="h-full overflow-hidden rounded-[1.5rem] border border-[#dfeaf4] bg-[#f7f9fb] shadow-[0_8px_20px_rgba(22,36,58,0.04)]">
+              <figure className="h-full overflow-hidden rounded-[1.3rem] border border-[#dfeaf4] bg-[#f7f9fb] shadow-[0_6px_16px_rgba(22,36,58,0.04)]">
                 <img
                   src={w.image}
                   alt={w.title}
                   width={900}
                   height={900}
                   loading="lazy"
-                  className="aspect-[1.15] w-full object-cover"
+                  className="aspect-[1.2] w-full object-cover"
                 />
-                <figcaption className="px-4 pb-5 pt-3">
-                  <p className="text-[0.68rem] font-bold uppercase tracking-[0.12em] text-[#2b6ef6]">
+                <figcaption className="px-3.5 pb-4 pt-2.5">
+                  <p className="text-[0.62rem] font-bold uppercase tracking-[0.12em] text-[#2b6ef6]">
                     {w.category}
                   </p>
-                  <h2 className="mt-1.5 text-[0.98rem] font-semibold leading-snug text-[#1f2a37]">
+                  <h2 className="mt-1 text-[0.92rem] font-semibold leading-snug text-[#1f2a37]">
                     {w.title}
                   </h2>
                 </figcaption>
@@ -116,7 +116,7 @@ function Portfolio() {
             </Reveal>
           ))}
         </div>
-        <p className="mt-7 text-center text-xs text-muted-foreground">
+        <p className="mt-6 text-center text-[0.7rem] text-muted-foreground">
           More BENOVERTECH projects will be added here as they are completed and delivered.
         </p>
       </Section>

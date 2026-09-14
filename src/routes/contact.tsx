@@ -47,7 +47,7 @@ function Contact() {
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">Contact</p>
           <h1 className="mt-4 text-4xl font-extrabold text-white sm:text-5xl">Let&apos;s talk</h1>
           <p className="mt-6 text-base leading-relaxed text-white/70">
-            Visit the shop, call us, or send a WhatsApp message. We are here to help.
+            Visit the shop, give us a call, or send a WhatsApp message. We are always ready to help.
           </p>
         </div>
       </section>

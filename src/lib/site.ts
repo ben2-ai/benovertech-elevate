@@ -1,7 +1,7 @@
 export const site = {
   name: "BENOVERTECH",
-  tagline: "Design • Printing • Tech",
-  message: "We design, print, and help you choose the right tech.",
+  tagline: "Design • Print • Tech",
+  message: "We design, print, and help people get the right gadgets for everyday life.",
   address: "Lagos, Nigeria",
   hours: "Open Monday to Saturday, 8am to 6pm",
   email: "benovertech@gmail.com",

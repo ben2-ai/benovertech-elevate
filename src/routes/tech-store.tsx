@@ -171,8 +171,8 @@ function TechStore() {
             Gadgets that keep you connected
           </h1>
           <p className="mt-6 text-base leading-relaxed text-white/70">
-            Phones, laptops, tablets, audio, and everyday accessories, available in our shop at
-            fair prices. Message us for today&apos;s price and availability.
+            Phones, laptops, tablets, audio devices, and everyday accessories, all available in our
+            shop at fair prices. Send us a message for today&apos;s price and availability.
           </p>
         </div>
       </section>

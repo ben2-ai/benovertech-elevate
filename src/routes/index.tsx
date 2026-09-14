@@ -50,33 +50,33 @@ const services = [
   {
     icon: Palette,
     title: "Graphic Design",
-    text: "Logos, brand identity, flyers, social media designs and adverts that help your business stand out.",
+    text: "Strong brand visuals, logos, flyers, social media creatives, and adverts that make your business stand out.",
     image: "/Graphic%20designing%20samples.png",
     to: "/graphics" as const,
   },
   {
     icon: Printer,
     title: "Printing Press",
-    text: "Large format printing, banners, business cards, brochures, stickers and branded souvenirs, all done neatly.",
+    text: "Banners, business cards, brochures, stickers, and branded souvenirs, printed clean and delivered the right way.",
     image: "/benovertech%20printing%20press%20snap.jpeg",
     to: "/printing" as const,
   },
   {
     icon: Smartphone,
     title: "Tech Store",
-    text: "Phones, laptops, tablets, smartwatches, earbuds, chargers and other everyday accessories.",
+    text: "Phones, laptops, tablets, smartwatches, earbuds, chargers, and everyday accessories you can trust.",
     image: "/benovertech%20overall%20shop%20snap.png",
     to: "/tech-store" as const,
   },
 ];
 
 const reasons = [
-  { icon: BadgeCheck, title: "Quality first", text: "Sharp designs and clean prints you will be proud to show off." },
-  { icon: Timer, title: "Quick delivery", text: "We work with your deadline and keep you posted." },
-  { icon: Wallet, title: "Fair prices", text: "Straightforward prices that work for your budget." },
-  { icon: ShieldCheck, title: "Trusted gadgets", text: "Reliable devices from suppliers we trust." },
-  { icon: Lightbulb, title: "Fresh ideas", text: "Good ideas that make your brand look solid and established." },
-  { icon: Headphones, title: "Real support", text: "Speak with a real person on WhatsApp or phone during the week." },
+  { icon: BadgeCheck, title: "Quality first", text: "Clean work, sharp finishing, and results that look professional from the first glance." },
+  { icon: Timer, title: "Fast service", text: "We understand deadlines and keep you updated from start to finish." },
+  { icon: Wallet, title: "Fair prices", text: "Straightforward pricing that makes sense for your budget." },
+  { icon: ShieldCheck, title: "Trusted gadgets", text: "Reliable devices from suppliers we stand behind." },
+  { icon: Lightbulb, title: "Fresh ideas", text: "We help brands look well established and easy to trust." },
+  { icon: Headphones, title: "Real support", text: "Talk to a real person on WhatsApp or phone whenever you need help." },
 ];
 
 const gadgets = [
@@ -160,10 +160,10 @@ function Home() {
               <span className="mt-1 block text-white">Tech for real life.</span>
             </h1>
             <p className="mt-6 max-w-xl text-base leading-[1.8] text-white/70">
-              This is the official site for Benovertech. Here, we handle brand graphics designs,
-              quality printing, and supply all kinds of phones, laptops, and accessories.
+              This is the official Benovertech website. We handle brand design, quality printing,
+              and supply phones, laptops, and accessories for everyday life and business.
               <span className="mt-3 block">
-                We help you bring your ideas to life. Choose Benovertech, choose lifestyle.
+                We help bring your ideas to life. Choose Benovertech, choose quality.
               </span>
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">

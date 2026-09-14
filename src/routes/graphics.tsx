@@ -33,15 +33,15 @@ export const Route = createFileRoute("/graphics")({
 });
 
 const services = [
-  { icon: PenTool, title: "Logo Design", text: "A clear, memorable logo that fits your business." },
-  { icon: Layers, title: "Brand Identity", text: "Colours, fonts, and a full brand kit that stays consistent." },
-  { icon: Brush, title: "Flyers and Posters", text: "Fine artwork that is ready to print." },
-  { icon: Share2, title: "Social Media Designs", text: "Post and story designs that help people notice you." },
-  { icon: CreditCard, title: "Business Cards", text: "Professional cards that leave a good impression." },
-  { icon: CalendarHeart, title: "Event Designs", text: "Weddings, birthdays, conferences, and church programmes." },
-  { icon: Megaphone, title: "Advertising Materials", text: "Campaign artwork for online and offline adverts." },
-  { icon: Shirt, title: "Clothes Customisation", text: "Custom T-shirts, polos, caps, and branded wear." },
-  { icon: Sparkles, title: "Digital Marketing Creatives", text: "Ad banners and visuals made to get results." },
+  { icon: PenTool, title: "Logo Design", text: "A clean, memorable logo that fits your brand and speaks clearly." },
+  { icon: Layers, title: "Brand Identity", text: "Colours, fonts, and a full brand set that stays consistent everywhere." },
+  { icon: Brush, title: "Flyers and Posters", text: "Nice artwork that is ready to print and easy to notice." },
+  { icon: Share2, title: "Social Media Designs", text: "Posts and stories that help your brand get attention online." },
+  { icon: CreditCard, title: "Business Cards", text: "Professional cards that leave a good impression when people meet you." },
+  { icon: CalendarHeart, title: "Event Designs", text: "Weddings, birthdays, conferences, and church programmes that look organised and beautiful." },
+  { icon: Megaphone, title: "Advertising Materials", text: "Campaign visuals made for real visibility online and offline." },
+  { icon: Shirt, title: "Clothes Customisation", text: "Custom T-shirts, polos, caps, and branded wear that feel premium." },
+  { icon: Sparkles, title: "Digital Marketing Creatives", text: "Banner designs and ad creatives that help your message convert." },
 ];
 
 const advertisingWork = [
@@ -62,7 +62,7 @@ function Graphics() {
           </h1>
           <p className="mt-6 text-base leading-relaxed text-white/70">
             Tell us what you have in mind and we will turn it into a clean, professional design,
-            ready for printing or posting online.
+            ready for print or for posting online.
           </p>
           <div className="mt-8 flex justify-center">
             <WhatsAppButton message="Hello BENOVERTECH, I want to get a price for a design.">

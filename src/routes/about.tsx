@@ -27,17 +27,17 @@ const divisions = [
   {
     icon: Palette,
     title: "Creative Design Division",
-    text: "Logos, brand identity, flyers, social media creatives, event designs and advertising materials.",
+    text: "Logos, brand identity, flyers, social media creatives, event materials, and adverts that speak clearly.",
   },
   {
     icon: Printer,
     title: "Printing Division",
-    text: "Large format printing, banners, business cards, brochures, stickers, invitations and souvenirs.",
+    text: "Banners, business cards, brochures, stickers, invitations, and branded souvenirs with neat finishing.",
   },
   {
     icon: Smartphone,
     title: "Technology Division",
-    text: "Phones, laptops, tablets, smartwatches, audio, chargers, power banks, cables and accessories.",
+    text: "Phones, laptops, tablets, smartwatches, audio devices, chargers, power banks, and accessories you can rely on.",
   },
 ];
 
@@ -53,10 +53,10 @@ function About() {
               One trusted company. Three things we do well.
           </h1>
             <p className="mt-6 text-base leading-relaxed text-white/70">
-              BENOVERTECH is a Nigerian company offering professional graphic design, quality
-              printing, and reliable tech gadgets. We help people and businesses bring their ideas
-              to life, create strong brands, get neat print materials, and find the right phones,
-              laptops, gadgets, and accessories.
+              BENOVERTECH is a Nigerian company that brings together creative design, quality
+              printing, and reliable tech products. We help people and businesses bring their ideas
+              to life, build strong brands, get neat print materials, and find the right phones,
+              laptops, gadgets, and accessories for their day-to-day needs.
           </p>
         </div>
       </section>
@@ -77,13 +77,13 @@ function About() {
               <h2 className="text-3xl font-bold sm:text-4xl">A quick look at us</h2>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
                 Based in Lagos, Nigeria, BENOVERTECH brings design, professional printing, and
-                dependable technology under one roof. Whether you are starting a small business,
-                planning an event, or changing your phone or laptop, you get clear advice, fair
-                pricing, and work that is finished properly.
+                dependable technology under one roof. Whether you are starting a business, planning
+                an event, or upgrading your phone or laptop, you get honest advice, fair pricing,
+                and work done properly.
             </p>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-                We give each job to the team that knows it best, so you speak with people who
-                understand exactly what you need.
+                We give every job to the right hands, so you are always speaking with people who
+                understand what you need and how to deliver it well.
             </p>
           </Reveal>
         </div>
@@ -111,24 +111,23 @@ function About() {
             <p className="mt-2 text-base font-semibold text-accent">Founder, BENOVERTECH</p>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                I am a Computer Scientist with over nine years of experience in the printing
-                business and over five years of experience in the gadget business.
+                I am a Computer Scientist with more than nine years of experience in the printing
+                business and over five years in the gadget business.
               </p>
               <p>
                 Over the years, I have worked with individuals, business owners, and brands that
-                need quality designs, professional printing, and reliable technology solutions.
-                This experience has shown me what customers truly value: good work, honest service,
+                need quality designs, professional printing, and reliable tech solutions. That
+                experience has shown me what people really value: good work, honest service,
                 quality products, and a smooth customer experience.
               </p>
               <p>
-                I started BENOVERTECH to bring creative design, printing, and technology services
-                together in one trusted place. Whether you need an eye-catching design, quality
-                print materials, a phone, a laptop, or accessories, my goal is to make the process
-                easy and stress-free for you.
+                I started BENOVERTECH to bring creative design, printing, and technology together in
+                one trusted place. Whether you need a clean design, quality print materials, a phone,
+                a laptop, or accessories, my goal is to make the whole process easy and stress-free.
               </p>
               <p>
-                At BENOVERTECH, I am committed to delivering work that looks good, works well, and
-                gives every customer value for their money.
+                At BENOVERTECH, I am committed to delivering work that looks good, works properly,
+                and gives every customer real value for their money.
               </p>
             </div>
           </Reveal>

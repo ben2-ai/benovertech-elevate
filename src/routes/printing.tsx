@@ -86,8 +86,8 @@ function Printing() {
             Neat printing, ready when you need it
           </h1>
           <p className="mt-6 text-base leading-relaxed text-white/70">
-            From one banner to thousands of flyers, we handle your job with sharp colour and neat
-            finishing.
+            From one banner to thousands of flyers, we handle your job with sharp colours and neat
+            finishing that looks clean and professional.
           </p>
           <div className="mt-8 flex justify-center">
             <WhatsAppButton message="Hello BENOVERTECH, I want to get a price for printing.">

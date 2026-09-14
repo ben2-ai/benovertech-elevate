@@ -92,8 +92,7 @@ export function ContactStrip() {
           <div className="relative z-10">
             <h2 className="text-3xl font-bold text-white sm:text-4xl">Let&apos;s get your job started</h2>
             <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-white/70">
-              Send us a message on WhatsApp or call us directly. We reply quickly during opening hours —{" "}
-              {site.hours.toLowerCase()}.
+              Send us a message on WhatsApp or call us directly. We reply quickly during opening hours, {site.hours.toLowerCase()}.
             </p>
             <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
               <WhatsAppButton className="w-full sm:w-auto">Chat with us</WhatsAppButton>

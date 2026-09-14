@@ -100,21 +100,25 @@ const testimonials = [
   {
     name: "Chidinma O.",
     role: "Fashion brand owner",
+    rating: 4,
     text: "They designed my logo and printed my labels perfectly. My brand finally looks professional.",
   },
   {
     name: "Emeka A.",
     role: "Event planner",
+    rating: 3,
     text: "My banners and invitation cards were ready before the deadline. Very neat finishing.",
   },
   {
     name: "Blessing T.",
     role: "Student",
+    rating: 5,
     text: "I bought my laptop here. Good condition, fair price, and they explained everything.",
   },
   {
     name: "Mr. Tunde S.",
     role: "Church administrator",
+    rating: 4,
     text: "Flyers, souvenirs and a new sound of customer service. BENOVERTECH is now our go-to.",
   },
 ];
@@ -299,8 +303,8 @@ function Home() {
           {testimonials.map((t, i) => (
             <Reveal key={t.name} delay={i * 70}>
               <figure className="card-surface h-full p-6">
-                <div className="flex gap-1 text-gold">
-                  {Array.from({ length: 5 }).map((_, s) => (
+                <div className="flex gap-1 text-gold" aria-label={`${t.rating} out of 5 stars`}>
+                  {Array.from({ length: t.rating }).map((_, s) => (
                     <Star key={s} className="h-4 w-4 fill-current" />
                   ))}
                 </div>

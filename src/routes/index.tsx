@@ -1,24 +1,323 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import {
+  ArrowRight,
+  BadgeCheck,
+  Headphones,
+  Laptop,
+  Palette,
+  Printer,
+  ShieldCheck,
+  Smartphone,
+  Sparkles,
+  Star,
+  Timer,
+  Wallet,
+  Watch,
+} from "lucide-react";
+import hero from "@/assets/hero.jpg";
+import design from "@/assets/service-design.jpg";
+import print from "@/assets/service-print.jpg";
+import tech from "@/assets/service-tech.jpg";
+import pPhone from "@/assets/p-phone.jpg";
+import pLaptop from "@/assets/p-laptop.jpg";
+import pWatch from "@/assets/p-watch.jpg";
+import pAudio from "@/assets/p-audio.jpg";
+import port1 from "@/assets/port-1.jpg";
+import port2 from "@/assets/port-2.jpg";
+import port3 from "@/assets/port-3.jpg";
+import port6 from "@/assets/port-6.jpg";
+import { Reveal } from "@/components/site/Reveal";
+import {
+  ContactStrip,
+  HoursStrip,
+  Section,
+  SectionHead,
+  WhatsAppButton,
+} from "@/components/site/ui";
 
-// No head() here: the home route inherits title/description/og/twitter from
-// __root.tsx, and ships no og:image so serve-time hosting can inject the
-// project's social preview (explicit og:image or latest screenshot).
 export const Route = createFileRoute("/")({
-  component: Index,
+  head: () => ({
+    meta: [
+      { title: "BENOVERTECH — Design, Printing & Tech Gadgets in Lagos" },
+      {
+        name: "description",
+        content:
+          "Creative graphic design, quality printing and reliable phones, laptops and accessories. BENOVERTECH, Ago Palace, Lagos.",
+      },
+      { property: "og:title", content: "BENOVERTECH — Design, Printing & Tech Gadgets in Lagos" },
+      {
+        property: "og:description",
+        content:
+          "Creative graphic design, quality printing and reliable phones, laptops and accessories in Lagos.",
+      },
+    ],
+  }),
+  component: Home,
 });
 
-// IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
-function Index() {
+const services = [
+  {
+    icon: Palette,
+    title: "Graphic Design",
+    text: "Logos, brand identity, flyers, social media designs and advertising creatives that make you stand out.",
+    image: design,
+    to: "/graphics" as const,
+  },
+  {
+    icon: Printer,
+    title: "Printing Press",
+    text: "Large format printing, banners, business cards, brochures, stickers and branded souvenirs.",
+    image: print,
+    to: "/printing" as const,
+  },
+  {
+    icon: Smartphone,
+    title: "Tech Store",
+    text: "Phones, laptops, tablets, smartwatches, earbuds, chargers and everyday accessories.",
+    image: tech,
+    to: "/tech-store" as const,
+  },
+];
+
+const reasons = [
+  { icon: BadgeCheck, title: "Quality first", text: "Sharp designs and clean prints you can be proud of." },
+  { icon: Timer, title: "Fast turnaround", text: "We work to your deadline and keep you updated." },
+  { icon: Wallet, title: "Friendly prices", text: "Fair, transparent pricing for every budget." },
+  { icon: ShieldCheck, title: "Trusted gadgets", text: "Reliable devices sourced from dependable suppliers." },
+  { icon: Sparkles, title: "Creative ideas", text: "Fresh thinking that helps your brand look established." },
+  { icon: Headphones, title: "Real support", text: "Talk to a human on WhatsApp or by phone any working day." },
+];
+
+const gadgets = [
+  { image: pPhone, name: "Smartphones", spec: "Latest and clean pre-owned devices", icon: Smartphone },
+  { image: pLaptop, name: "Laptops", spec: "Work, school and business machines", icon: Laptop },
+  { image: pWatch, name: "Smartwatches", spec: "Fitness tracking and notifications", icon: Watch },
+  { image: pAudio, name: "Earbuds & Headphones", spec: "Wireless sound with deep bass", icon: Headphones },
+];
+
+const featured = [port1, port2, port3, port6];
+
+const testimonials = [
+  {
+    name: "Chidinma O.",
+    role: "Fashion brand owner",
+    text: "They designed my logo and printed my labels perfectly. My brand finally looks professional.",
+  },
+  {
+    name: "Emeka A.",
+    role: "Event planner",
+    text: "My banners and invitation cards were ready before the deadline. Very neat finishing.",
+  },
+  {
+    name: "Blessing T.",
+    role: "Student",
+    text: "I bought my laptop here. Good condition, friendly price, and they explained everything.",
+  },
+  {
+    name: "Mr. Tunde S.",
+    role: "Church administrator",
+    text: "Flyers, souvenirs and a new sound of customer service. BENOVERTECH is now our go-to.",
+  },
+];
+
+function Home() {
   return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
+    <>
+      <section className="relative overflow-hidden bg-gradient-midnight">
+        <div className="mx-auto grid max-w-6xl gap-10 px-4 pb-16 pt-14 sm:px-6 sm:pb-24 sm:pt-20 lg:grid-cols-2 lg:items-center">
+          <div>
+            <span className="inline-flex items-center gap-2 rounded-full border border-white/15 px-3 py-1 text-xs font-medium text-gold">
+              Creative • Print • Technology
+            </span>
+            <h1 className="mt-5 text-4xl font-extrabold leading-[1.08] text-white sm:text-5xl lg:text-6xl">
+              Creative Graphic Design Ideas.{" "}
+              <span className="text-gradient-gold">Quality Printing.</span> Tech Solution.
+            </h1>
+            <p className="mt-6 max-w-xl text-base leading-relaxed text-white/70">
+              From eye-catching brand designs and quality printing then phones, laptops, and
+              accessories, BENOVERTECH is here to help you bring your ideas to life, get your work
+              printed neatly, and stay connected with your loved ones with the right gadgets.
+            </p>
+            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <WhatsAppButton className="w-full sm:w-auto">Chat on WhatsApp</WhatsAppButton>
+              <a
+                href="#services"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/25 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10 sm:w-auto"
+              >
+                Explore Our Services
+                <ArrowRight className="h-4 w-4" />
+              </a>
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="overflow-hidden rounded-3xl border border-white/10 shadow-lift">
+              <img
+                src={hero}
+                alt="Brand design work, printed materials, a laptop, smartphone and earbuds"
+                width={1600}
+                height={1200}
+                className="h-full w-full object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <HoursStrip />
+
+      <Section id="services">
+        <SectionHead
+          eyebrow="What we do"
+          title="Three specialist divisions, one trusted company"
+          text="We design. We print. We connect you with the right technology."
+        />
+        <div className="mt-12 grid gap-6 md:grid-cols-3">
+          {services.map((s, i) => (
+            <Reveal key={s.title} delay={i * 90}>
+              <Link to={s.to} className="card-surface group block h-full overflow-hidden">
+                <img
+                  src={s.image}
+                  alt={s.title}
+                  width={1024}
+                  height={768}
+                  loading="lazy"
+                  className="h-44 w-full object-cover"
+                />
+                <div className="p-6">
+                  <s.icon className="h-6 w-6 text-gold-deep" />
+                  <h3 className="mt-4 text-xl font-bold">{s.title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.text}</p>
+                  <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-accent-foreground">
+                    Learn more
+                    <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </span>
+                </div>
+              </Link>
+            </Reveal>
+          ))}
+        </div>
+      </Section>
+
+      <Section className="bg-secondary/50">
+        <SectionHead
+          eyebrow="Why choose us"
+          title="Why customers choose BENOVERTECH"
+          text="Simple, honest service from a team that treats your project like its own."
+        />
+        <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+          {reasons.map((r, i) => (
+            <Reveal key={r.title} delay={i * 60}>
+              <div className="card-surface h-full p-6">
+                <div className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-gold text-primary-foreground">
+                  <r.icon className="h-5 w-5" />
+                </div>
+                <h3 className="mt-4 text-lg font-semibold">{r.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{r.text}</p>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+      </Section>
+
+      <Section>
+        <SectionHead
+          eyebrow="Tech store"
+          title="Featured gadgets and accessories"
+          text="Available in store with friendly prices. Contact us for current price and availability."
+        />
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+          {gadgets.map((g, i) => (
+            <Reveal key={g.name} delay={i * 70}>
+              <div className="card-surface h-full overflow-hidden">
+                <img
+                  src={g.image}
+                  alt={g.name}
+                  width={800}
+                  height={800}
+                  loading="lazy"
+                  className="aspect-square w-full bg-secondary object-cover"
+                />
+                <div className="p-5">
+                  <h3 className="text-base font-semibold">{g.name}</h3>
+                  <p className="mt-1 text-sm text-muted-foreground">{g.spec}</p>
+                  <p className="mt-3 text-xs font-semibold uppercase tracking-wide text-gold-deep">
+                    Available in store
+                  </p>
+                </div>
+              </div>
+            </Reveal>
+          ))}
+        </div>
+        <Reveal className="mt-10 text-center">
+          <Link
+            to="/tech-store"
+            className="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-6 py-3 text-sm font-semibold text-primary-foreground shadow-soft transition-transform hover:-translate-y-0.5"
+          >
+            Visit the tech store
+            <ArrowRight className="h-4 w-4" />
+          </Link>
+        </Reveal>
+      </Section>
+
+      <Section className="bg-secondary/50">
+        <SectionHead
+          eyebrow="Our work"
+          title="Featured design and printing portfolio"
+          text="A look at the kind of work we produce for brands, businesses and events."
+        />
+        <div className="mt-12 grid grid-cols-2 gap-4 lg:grid-cols-4">
+          {featured.map((img, i) => (
+            <Reveal key={i} delay={i * 70}>
+              <div className="overflow-hidden rounded-2xl border border-border shadow-soft">
+                <img
+                  src={img}
+                  alt="BENOVERTECH portfolio work"
+                  width={900}
+                  height={900}
+                  loading="lazy"
+                  className="aspect-square w-full object-cover transition-transform duration-500 hover:scale-105"
+                />
+              </div>
+            </Reveal>
+          ))}
+        </div>
+        <Reveal className="mt-10 text-center">
+          <Link
+            to="/portfolio"
+            className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold shadow-soft transition-transform hover:-translate-y-0.5"
+          >
+            See full portfolio
+            <ArrowRight className="h-4 w-4" />
+          </Link>
+        </Reveal>
+      </Section>
+
+      <Section>
+        <SectionHead eyebrow="Testimonials" title="What our customers say" />
+        <div className="mt-12 grid gap-5 sm:grid-cols-2">
+          {testimonials.map((t, i) => (
+            <Reveal key={t.name} delay={i * 70}>
+              <figure className="card-surface h-full p-6">
+                <div className="flex gap-1 text-gold">
+                  {Array.from({ length: 5 }).map((_, s) => (
+                    <Star key={s} className="h-4 w-4 fill-current" />
+                  ))}
+                </div>
+                <blockquote className="mt-4 text-sm leading-relaxed text-foreground">
+                  “{t.text}”
+                </blockquote>
+                <figcaption className="mt-5 text-sm">
+                  <span className="font-semibold">{t.name}</span>
+                  <span className="block text-muted-foreground">{t.role}</span>
+                </figcaption>
+              </figure>
+            </Reveal>
+          ))}
+        </div>
+      </Section>
+
+      <ContactStrip />
+    </>
   );
 }

@@ -1,7 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Menu, X, MessageCircle } from "lucide-react";
 import { useEffect, useState } from "react";
-import logo from "@/assets/logo.png.asset.json";
 import { waLink } from "@/lib/site";
 
 const links = [
@@ -41,13 +40,13 @@ export function Nav() {
       <nav
         className={`mx-auto flex max-w-6xl items-center justify-between rounded-2xl border px-4 py-2.5 transition-all duration-300 lg:px-6 ${
           scrolled
-            ? "border-white/10 bg-card/70 shadow-soft backdrop-blur-xl"
-            : "border-white/5 bg-card/40 backdrop-blur-md"
+            ? "border-border bg-card/90 shadow-soft backdrop-blur-xl"
+            : "border-border/70 bg-card/80 backdrop-blur-md"
         }`}
       >
         <Link to="/" className="flex min-w-0 items-center gap-3" onClick={() => setOpen(false)}>
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#0a0a0a] ring-1 ring-gold/40 shadow-glow-gold">
-            <img src={logo.url} alt="BENOVERTECH logo" className="h-7 w-7 object-contain" />
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-border bg-white shadow-soft">
+            <img src="/favicon.png" alt="BENOVERTECH logo" className="h-7 w-7 object-contain" />
           </span>
           <span className="min-w-0">
             <span className="block truncate font-display text-base font-extrabold tracking-tight">

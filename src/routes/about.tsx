@@ -90,6 +90,52 @@ function About() {
       </Section>
 
       <Section className="bg-secondary/50">
+        <div className="grid gap-10 lg:grid-cols-[minmax(280px,0.8fr)_minmax(0,1.2fr)] lg:items-center">
+          <Reveal>
+            <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
+              <img
+                src="/ceo.jpg"
+                alt="E.C. Benjamin, founder of BENOVERTECH"
+                width={768}
+                height={1024}
+                loading="lazy"
+                className="aspect-[3/4] w-full object-cover object-top"
+              />
+            </div>
+          </Reveal>
+          <Reveal delay={80}>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-deep">
+              Meet the founder
+            </p>
+            <h2 className="mt-3 text-3xl font-bold sm:text-4xl">E.C. Benjamin</h2>
+            <p className="mt-2 text-base font-semibold text-accent">Founder, BENOVERTECH</p>
+            <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
+              <p>
+                I am a Computer Scientist with over nine years of experience in the printing
+                business and over five years of experience in the gadget business.
+              </p>
+              <p>
+                Over the years, I have worked with individuals, business owners, and brands that
+                need quality designs, professional printing, and reliable technology solutions.
+                This experience has shown me what customers truly value: good work, honest service,
+                quality products, and a smooth customer experience.
+              </p>
+              <p>
+                I started BENOVERTECH to bring creative design, printing, and technology services
+                together in one trusted place. Whether you need an eye-catching design, quality
+                print materials, a phone, a laptop, or accessories, my goal is to make the process
+                easy and stress-free for you.
+              </p>
+              <p>
+                At BENOVERTECH, I am committed to delivering work that looks good, works well, and
+                gives every customer value for their money.
+              </p>
+            </div>
+          </Reveal>
+        </div>
+      </Section>
+
+      <Section className="bg-secondary/50">
           <SectionHead eyebrow="Our services" title="People who know their work" />
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {divisions.map((d, i) => (

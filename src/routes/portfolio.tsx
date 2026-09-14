@@ -6,7 +6,6 @@ import port1 from "@/assets/port-1.jpg";
 import port2 from "@/assets/port-2.jpg";
 import port3 from "@/assets/port-3.jpg";
 import port4 from "@/assets/port-4.jpg";
-import port5 from "@/assets/port-5.jpg";
 import port6 from "@/assets/port-6.jpg";
 
 export const Route = createFileRoute("/portfolio")({
@@ -35,8 +34,21 @@ const works = [
   { image: port2, title: "Poster and flyer series", category: "Graphic Design" },
   { image: port3, title: "Roll-up banner and signage", category: "Print Work" },
   { image: port4, title: "Branded souvenir pack", category: "Branding" },
-  { image: port5, title: "Business website design", category: "Web Projects" },
   { image: port6, title: "Brochures and sticker print", category: "Print Work" },
+  {
+    image: "https://babcquotepro.vercel.app/B.A.B.C%20LOGO.png",
+    title: "B.A.B.C Quotation Studio",
+    category: "Web Projects",
+    description: "A quotation management platform built for smoother business operations.",
+    href: "https://babcquotepro.vercel.app/",
+  },
+  {
+    image: "https://coachzinny.vercel.app/images/coach-zinny.jpeg",
+    title: "Coach Zinny",
+    category: "Web Projects",
+    description: "A calm online therapy and relationship coaching platform for individuals and couples.",
+    href: "https://coachzinny.vercel.app/",
+  },
 ];
 
 function Portfolio() {
@@ -90,13 +102,26 @@ function Portfolio() {
                     {w.category}
                   </p>
                   <h2 className="mt-1 text-base font-semibold">{w.title}</h2>
+                  {"description" in w && (
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{w.description}</p>
+                  )}
+                  {"href" in w && (
+                    <a
+                      href={w.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-4 inline-flex text-sm font-semibold text-accent hover:underline"
+                    >
+                      Visit website <span aria-hidden="true">-&gt;</span>
+                    </a>
+                  )}
                 </figcaption>
               </figure>
             </Reveal>
           ))}
         </div>
         <p className="mt-8 text-center text-xs text-muted-foreground">
-          These are sample visuals and can be replaced with real BENOVERTECH project photos.
+          More BENOVERTECH projects will be added here as they are completed and delivered.
         </p>
       </Section>
 

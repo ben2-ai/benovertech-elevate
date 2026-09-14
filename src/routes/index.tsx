@@ -124,14 +124,16 @@ function Home() {
   return (
     <>
       <section className="relative overflow-hidden bg-gradient-midnight">
-        <div className="mx-auto grid max-w-6xl gap-10 px-4 pb-16 pt-14 sm:px-6 sm:pb-24 sm:pt-20 lg:grid-cols-2 lg:items-center">
+        <span className="pointer-events-none absolute -left-1/4 top-0 h-full w-1/2 rounded-full bg-teal/10 blur-[120px]" />
+        <span className="pointer-events-none absolute -bottom-1/4 -right-1/4 h-full w-1/2 rounded-full bg-gold/10 blur-[120px]" />
+        <div className="relative z-10 mx-auto grid max-w-6xl gap-10 px-4 pb-16 pt-14 sm:px-6 sm:pb-24 sm:pt-20 lg:grid-cols-2 lg:items-center">
           <div>
-            <span className="inline-flex items-center gap-2 rounded-full border border-white/15 px-3 py-1 text-xs font-medium text-gold">
+            <span className="inline-flex items-center gap-2 rounded-full border border-teal/30 bg-teal/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-teal">
               Creative • Print • Technology
             </span>
             <h1 className="mt-5 text-4xl font-extrabold leading-[1.08] text-white sm:text-5xl lg:text-6xl">
               Creative Graphic Design Ideas.{" "}
-              <span className="text-gradient-gold">Quality Printing.</span> Tech Solution.
+              <span className="text-gradient-aurora">Quality Printing.</span> Tech Solution.
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-white/70">
               From eye-catching brand designs and quality printing then phones, laptops, and
@@ -139,10 +141,10 @@ function Home() {
               printed neatly, and stay connected with your loved ones with the right gadgets.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <WhatsAppButton className="w-full sm:w-auto">Chat on WhatsApp</WhatsAppButton>
+              <WhatsAppButton className="w-full sm:w-auto shadow-glow-teal">Chat on WhatsApp</WhatsAppButton>
               <a
                 href="#services"
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/25 px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-white/10 sm:w-auto"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/25 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-white/10 hover:border-gold/40 sm:w-auto"
               >
                 Explore Our Services
                 <ArrowRight className="h-4 w-4" />
@@ -176,19 +178,22 @@ function Home() {
           {services.map((s, i) => (
             <Reveal key={s.title} delay={i * 90}>
               <Link to={s.to} className="card-surface group block h-full overflow-hidden">
-                <img
-                  src={s.image}
-                  alt={s.title}
-                  width={1024}
-                  height={768}
-                  loading="lazy"
-                  className="h-44 w-full object-cover"
-                />
+                <div className="relative">
+                  <img
+                    src={s.image}
+                    alt={s.title}
+                    width={1024}
+                    height={768}
+                    loading="lazy"
+                    className="h-44 w-full object-cover"
+                  />
+                  <span className="absolute inset-0 bg-gradient-to-t from-card/80 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                </div>
                 <div className="p-6">
                   <s.icon className="h-6 w-6 text-gold-deep" />
                   <h3 className="mt-4 text-xl font-bold">{s.title}</h3>
                   <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{s.text}</p>
-                  <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-accent-foreground">
+                  <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-accent">
                     Learn more
                     <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                   </span>
@@ -199,7 +204,7 @@ function Home() {
         </div>
       </Section>
 
-      <Section className="bg-secondary/50">
+      <Section className="bg-secondary/30">
         <SectionHead
           eyebrow="Why choose us"
           title="Why customers choose BENOVERTECH"
@@ -209,7 +214,7 @@ function Home() {
           {reasons.map((r, i) => (
             <Reveal key={r.title} delay={i * 60}>
               <div className="card-surface h-full p-6">
-                <div className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-gold text-primary-foreground">
+                <div className="inline-flex h-11 w-11 items-center justify-center rounded-2xl bg-gradient-gold text-primary-foreground shadow-glow-gold">
                   <r.icon className="h-5 w-5" />
                 </div>
                 <h3 className="mt-4 text-lg font-semibold">{r.title}</h3>
@@ -252,7 +257,7 @@ function Home() {
         <Reveal className="mt-10 text-center">
           <Link
             to="/tech-store"
-            className="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-6 py-3 text-sm font-semibold text-primary-foreground shadow-soft transition-transform hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 rounded-full bg-gradient-gold px-6 py-3 text-sm font-semibold text-primary-foreground shadow-glow-gold transition-all hover:-translate-y-0.5 hover:shadow-lift"
           >
             Visit the tech store
             <ArrowRight className="h-4 w-4" />
@@ -260,7 +265,7 @@ function Home() {
         </Reveal>
       </Section>
 
-      <Section className="bg-secondary/50">
+      <Section className="bg-secondary/30">
         <SectionHead
           eyebrow="Our work"
           title="Featured design and printing portfolio"
@@ -269,14 +274,14 @@ function Home() {
         <div className="mt-12 grid grid-cols-2 gap-4 lg:grid-cols-4">
           {featured.map((img, i) => (
             <Reveal key={i} delay={i * 70}>
-              <div className="overflow-hidden rounded-2xl border border-border shadow-soft">
+              <div className="group overflow-hidden rounded-2xl border border-border shadow-soft">
                 <img
                   src={img}
                   alt="BENOVERTECH portfolio work"
                   width={900}
                   height={900}
                   loading="lazy"
-                  className="aspect-square w-full object-cover transition-transform duration-500 hover:scale-105"
+                  className="aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
             </Reveal>
@@ -285,7 +290,7 @@ function Home() {
         <Reveal className="mt-10 text-center">
           <Link
             to="/portfolio"
-            className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold shadow-soft transition-transform hover:-translate-y-0.5"
+            className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold shadow-soft transition-all hover:-translate-y-0.5 hover:border-gold/40"
           >
             See full portfolio
             <ArrowRight className="h-4 w-4" />

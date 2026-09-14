@@ -28,7 +28,7 @@ export const Route = createFileRoute("/printing")({
       { property: "og:title", content: "Printing Services — BENOVERTECH" },
       {
         property: "og:description",
-        content: "Quality commercial printing with neat finishing and fast turnaround in Lagos.",
+        content: "Quality printing with neat finishing and quick delivery in Lagos.",
       },
     ],
   }),
@@ -90,7 +90,7 @@ function Printing() {
             finishing.
           </p>
           <div className="mt-8 flex justify-center">
-            <WhatsAppButton message="Hello BENOVERTECH, I would like to request a print quote.">
+            <WhatsAppButton message="Hello BENOVERTECH, I want to get a price for printing.">
               Ask for a printing price
             </WhatsAppButton>
           </div>

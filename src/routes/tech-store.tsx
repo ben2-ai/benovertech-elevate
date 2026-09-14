@@ -19,7 +19,7 @@ export const Route = createFileRoute("/tech-store")({
       {
         name: "description",
         content:
-          "Smartphones, laptops, tablets, smartwatches, earbuds, chargers, power banks, cables and accessories. Available in store at friendly prices.",
+          "Smartphones, laptops, tablets, smartwatches, earbuds, chargers, power banks, cables and accessories. Available in our shop at fair prices.",
       },
       { property: "og:title", content: "BENOVERTECH Tech Store" },
       {

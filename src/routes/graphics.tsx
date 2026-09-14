@@ -16,13 +16,13 @@ import { ContactStrip, Section, SectionHead, WhatsAppButton } from "@/components
 export const Route = createFileRoute("/graphics")({
   head: () => ({
     meta: [
-      { title: "Graphic Design Services in Lagos — BENOVERTECH" },
+      { title: "Graphic Design in Lagos — BENOVERTECH" },
       {
         name: "description",
         content:
           "Logo design, brand identity, flyers, posters, social media designs, business cards, event designs and clothes customization.",
       },
-      { property: "og:title", content: "Graphic Design Services — BENOVERTECH" },
+      { property: "og:title", content: "Graphic Design — BENOVERTECH" },
       {
         property: "og:description",
         content: "Creative design that helps your brand look established and trustworthy.",
@@ -58,7 +58,7 @@ function Graphics() {
             ready for printing or posting online.
           </p>
           <div className="mt-8 flex justify-center">
-            <WhatsAppButton message="Hello BENOVERTECH, I would like to request a design quote.">
+            <WhatsAppButton message="Hello BENOVERTECH, I want to get a price for a design.">
               Ask for a design price
             </WhatsAppButton>
           </div>

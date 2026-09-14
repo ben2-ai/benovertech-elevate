@@ -111,7 +111,7 @@ const testimonials = [
   {
     name: "Blessing T.",
     role: "Student",
-    text: "I bought my laptop here. Good condition, friendly price, and they explained everything.",
+    text: "I bought my laptop here. Good condition, fair price, and they explained everything.",
   },
   {
     name: "Mr. Tunde S.",
@@ -140,7 +140,7 @@ function Home() {
               the right gadgets.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <WhatsAppButton className="w-full sm:w-auto shadow-glow-teal">Chat on WhatsApp</WhatsAppButton>
+              <WhatsAppButton className="w-full sm:w-auto shadow-glow-teal">Chat with us</WhatsAppButton>
               <a
                 href="#services"
                 className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/25 px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-white/10 hover:border-gold/40 sm:w-auto"

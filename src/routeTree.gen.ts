@@ -11,7 +11,11 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
+import { Route as ContactRouteImport } from './routes/contact'
 import { Route as GraphicsRouteImport } from './routes/graphics'
+import { Route as PortfolioRouteImport } from './routes/portfolio'
+import { Route as PrintingRouteImport } from './routes/printing'
+import { Route as TechStoreRouteImport } from './routes/tech-store'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -23,40 +27,98 @@ const AboutRoute = AboutRouteImport.update({
   path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const GraphicsRoute = GraphicsRouteImport.update({
   id: '/graphics',
   path: '/graphics',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PortfolioRoute = PortfolioRouteImport.update({
+  id: '/portfolio',
+  path: '/portfolio',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrintingRoute = PrintingRouteImport.update({
+  id: '/printing',
+  path: '/printing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TechStoreRoute = TechStoreRouteImport.update({
+  id: '/tech-store',
+  path: '/tech-store',
   getParentRoute: () => rootRouteImport,
 } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
   '/graphics': typeof GraphicsRoute
+  '/portfolio': typeof PortfolioRoute
+  '/printing': typeof PrintingRoute
+  '/tech-store': typeof TechStoreRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
   '/graphics': typeof GraphicsRoute
+  '/portfolio': typeof PortfolioRoute
+  '/printing': typeof PrintingRoute
+  '/tech-store': typeof TechStoreRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/contact': typeof ContactRoute
   '/graphics': typeof GraphicsRoute
+  '/portfolio': typeof PortfolioRoute
+  '/printing': typeof PrintingRoute
+  '/tech-store': typeof TechStoreRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/graphics'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/graphics'
+    | '/portfolio'
+    | '/printing'
+    | '/tech-store'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/graphics'
-  id: '__root__' | '/' | '/about' | '/graphics'
+  to:
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/graphics'
+    | '/portfolio'
+    | '/printing'
+    | '/tech-store'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/contact'
+    | '/graphics'
+    | '/portfolio'
+    | '/printing'
+    | '/tech-store'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  ContactRoute: typeof ContactRoute
   GraphicsRoute: typeof GraphicsRoute
+  PortfolioRoute: typeof PortfolioRoute
+  PrintingRoute: typeof PrintingRoute
+  TechStoreRoute: typeof TechStoreRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -75,11 +137,39 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/graphics': {
       id: '/graphics'
       path: '/graphics'
       fullPath: '/graphics'
       preLoaderRoute: typeof GraphicsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/portfolio': {
+      id: '/portfolio'
+      path: '/portfolio'
+      fullPath: '/portfolio'
+      preLoaderRoute: typeof PortfolioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/printing': {
+      id: '/printing'
+      path: '/printing'
+      fullPath: '/printing'
+      preLoaderRoute: typeof PrintingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/tech-store': {
+      id: '/tech-store'
+      path: '/tech-store'
+      fullPath: '/tech-store'
+      preLoaderRoute: typeof TechStoreRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -88,7 +178,11 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  ContactRoute: ContactRoute,
   GraphicsRoute: GraphicsRoute,
+  PortfolioRoute: PortfolioRoute,
+  PrintingRoute: PrintingRoute,
+  TechStoreRoute: TechStoreRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

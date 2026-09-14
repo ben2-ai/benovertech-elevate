@@ -8,7 +8,7 @@ import { site, telLink, waLink } from "@/lib/site";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact BENOVERTECH — Lagos, Nigeria" },
+      { title: "Contact BENOVERTECH, Lagos, Nigeria" },
       {
         name: "description",
         content:

@@ -7,7 +7,7 @@ import { ContactStrip, Section, SectionHead, WhatsAppButton } from "@/components
 export const Route = createFileRoute("/tech-store")({
   head: () => ({
     meta: [
-      { title: "Tech Store — Phones, Laptops & Accessories in Lagos | BENOVERTECH" },
+      { title: "Tech Store, Phones, Laptops & Accessories in Lagos | BENOVERTECH" },
       {
         name: "description",
         content:

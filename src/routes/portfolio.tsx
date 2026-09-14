@@ -11,13 +11,13 @@ import port6 from "@/assets/port-6.jpg";
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
     meta: [
-      { title: "Portfolio — BENOVERTECH Design & Print Work" },
+      { title: "Portfolio, BENOVERTECH Design & Print Work" },
       {
         name: "description",
         content:
           "Branding, graphic design, print work and web projects delivered by BENOVERTECH in Lagos.",
       },
-      { property: "og:title", content: "Portfolio — BENOVERTECH" },
+      { property: "og:title", content: "Portfolio, BENOVERTECH" },
       {
         property: "og:description",
         content: "A selection of branding, design, print and web projects.",

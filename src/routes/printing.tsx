@@ -19,13 +19,13 @@ import { waLink } from "@/lib/site";
 export const Route = createFileRoute("/printing")({
   head: () => ({
     meta: [
-      { title: "Printing Services in Lagos — BENOVERTECH Printing Press" },
+      { title: "Printing Services in Lagos, BENOVERTECH Printing Press" },
       {
         name: "description",
         content:
           "Large format printing, flyers, posters, business cards, banners, stickers, brochures, invitations and branded souvenirs.",
       },
-      { property: "og:title", content: "Printing Services — BENOVERTECH" },
+      { property: "og:title", content: "Printing Services, BENOVERTECH" },
       {
         property: "og:description",
         content: "Quality printing with neat finishing and quick delivery in Lagos.",

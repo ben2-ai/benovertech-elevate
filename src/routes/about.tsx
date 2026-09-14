@@ -6,7 +6,7 @@ import { ContactStrip, Section, SectionHead } from "@/components/site/ui";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About BENOVERTECH — Creative, Print & Technology Company" },
+      { title: "About BENOVERTECH, Creative, Print & Technology Company" },
       {
         name: "description",
         content:

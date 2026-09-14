@@ -16,13 +16,13 @@ import { ContactStrip, Section, SectionHead, WhatsAppButton } from "@/components
 export const Route = createFileRoute("/graphics")({
   head: () => ({
     meta: [
-      { title: "Graphic Design in Lagos — BENOVERTECH" },
+      { title: "Graphic Design in Lagos, BENOVERTECH" },
       {
         name: "description",
         content:
           "Logo design, brand identity, flyers, posters, social media designs, business cards, event designs and clothes customization.",
       },
-      { property: "og:title", content: "Graphic Design — BENOVERTECH" },
+      { property: "og:title", content: "Graphic Design, BENOVERTECH" },
       {
         property: "og:description",
         content: "Creative design that helps your brand look established and trustworthy.",

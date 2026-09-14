@@ -98,12 +98,14 @@ const gadgets = [
     name: "Smartwatches",
     spec: "Fitness tracking and notifications",
     icon: Watch,
+    featureCard: true,
   },
   {
-    image: "/Benovertech%20Laptop%20Accessories%20Display.png",
+    image: "/benovertech%20earbuds.png",
     name: "Earbuds & Headphones",
     spec: "Wireless sound with strong bass",
     icon: Headphones,
+    featureCard: true,
   },
 ];
 

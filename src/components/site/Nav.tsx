@@ -41,8 +41,10 @@ export function Nav() {
       }`}
     >
       <nav className="mx-auto grid max-w-6xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-4 py-3 sm:px-6 lg:flex lg:justify-between">
-        <Link to="/" className="flex min-w-0 items-center gap-2" onClick={() => setOpen(false)}>
-          <img src={logo.url} alt="BENOVERTECH logo" className="h-10 w-10 shrink-0 object-contain" />
+        <Link to="/" className="flex min-w-0 items-center gap-3" onClick={() => setOpen(false)}>
+          <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-[#0a0a0a] ring-1 ring-white/10 shadow-soft">
+            <img src={logo.url} alt="BENOVERTECH logo" className="h-8 w-8 object-contain" />
+          </span>
           <span className="min-w-0">
             <span className="block truncate font-display text-base font-extrabold tracking-tight">
               BENOVERTECH

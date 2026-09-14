@@ -146,13 +146,18 @@ const testimonials = [
 function Home() {
   return (
     <>
-      <section className="relative overflow-hidden bg-gradient-midnight">
-        <span className="pointer-events-none absolute -left-1/4 top-0 h-full w-1/2 rounded-full bg-teal/10 blur-[120px]" />
-        <span className="pointer-events-none absolute -bottom-1/4 -right-1/4 h-full w-1/2 rounded-full bg-gold/10 blur-[120px]" />
+      <section className="aurora-glow relative overflow-hidden bg-gradient-midnight">
+        <span className="pointer-events-none absolute -left-1/4 top-0 h-full w-1/2 rounded-full bg-teal/10 blur-[140px]" />
+        <span className="pointer-events-none absolute -bottom-1/4 -right-1/4 h-full w-1/2 rounded-full bg-gold/10 blur-[140px]" />
         <div className="relative z-10 mx-auto grid max-w-6xl gap-10 px-4 pb-16 pt-14 sm:px-6 sm:pb-24 sm:pt-20 lg:grid-cols-2 lg:items-center">
           <div>
-            <h1 className="mt-5 text-4xl font-extrabold leading-[1.08] text-white sm:text-5xl lg:text-6xl">
-              Good design. <span className="text-gold-deep">Neat printing.</span> Home of Quality Gadgets.
+            <p className="inline-flex items-center rounded-full border border-white/20 bg-white/8 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-white/80">
+              BENOVERTECH Lagos
+            </p>
+            <h1 className="mt-5 text-4xl font-black leading-[0.96] tracking-[-0.05em] text-white sm:text-5xl lg:text-6xl">
+              <span className="block text-gradient-aurora">Design</span>
+              <span className="mt-1 block">Print</span>
+              <span className="mt-1 block text-white">Tech for real life.</span>
             </h1>
             <p className="mt-6 max-w-xl text-base leading-[1.8] text-white/70">
               This is the official site for Benovertech. Here, we handle brand graphics designs,
@@ -256,9 +261,9 @@ function Home() {
           {gadgets.map((g, i) => (
             <Reveal key={g.name} delay={i * 70}>
               <div
-                className={`h-full overflow-hidden ${
+                className={`group h-full overflow-hidden ${
                   g.featureCard
-                    ? "rounded-[2rem] border border-sky-200 bg-[#f3f4f6] p-2 shadow-none"
+                    ? "rounded-[2rem] border border-sky-200/80 bg-[linear-gradient(180deg,rgba(255,255,255,0.95),rgba(244,247,255,0.92))] p-2 shadow-[0_20px_40px_-26px_rgba(59,130,246,0.35)]"
                     : "card-surface"
                 }`}
               >
@@ -270,23 +275,23 @@ function Home() {
                   loading="lazy"
                   className={
                     g.featureCard
-                      ? "aspect-[1.65] w-full rounded-[1.5rem] border border-[#cfe2fb] bg-[#f4f5f7] object-cover object-center p-0 shadow-[inset_0_0_0_1px_rgba(139,167,255,0.12)]"
-                      : "aspect-square w-full bg-secondary object-cover"
+                      ? "aspect-[1.55] w-full rounded-[1.55rem] border border-[#dfeafb] bg-[#f5f7fb] object-cover object-center transition duration-500 group-hover:scale-[1.03]"
+                      : "aspect-[1.08] w-full bg-secondary object-cover transition duration-500 group-hover:scale-[1.04]"
                   }
                 />
-                <div className={`p-5 ${g.featureCard ? "px-2 pb-3 pt-4" : ""}`}>
-                  <h3 className={`font-semibold ${g.featureCard ? "text-[2rem] leading-[1.1] text-foreground" : "text-base"}`}>
-                    {g.name}
-                  </h3>
-                  <p className={`mt-1 text-sm text-muted-foreground ${g.featureCard ? "whitespace-pre-line text-[1.05rem] leading-[1.2] text-foreground/80" : ""}`}>
-                    {g.spec}
-                  </p>
+                <div className={`p-5 ${g.featureCard ? "px-3 pb-4 pt-4" : ""}`}>
                   <p
-                    className={`mt-3 text-xs font-semibold uppercase tracking-wide ${
+                    className={`text-[10px] font-semibold uppercase tracking-[0.18em] ${
                       g.featureCard ? "text-[#1c79e6]" : "text-gold-deep"
                     }`}
                   >
                     Available in our shop
+                  </p>
+                  <h3 className={`mt-2 font-semibold ${g.featureCard ? "text-[1.8rem] leading-[1.05] text-foreground" : "text-base"}`}>
+                    {g.name}
+                  </h3>
+                  <p className={`mt-2 text-sm text-muted-foreground ${g.featureCard ? "whitespace-pre-line text-[1.02rem] leading-[1.25] text-foreground/80" : ""}`}>
+                    {g.spec}
                   </p>
                 </div>
               </div>

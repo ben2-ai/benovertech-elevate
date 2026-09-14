@@ -40,111 +40,111 @@ type Product = { name: string; category: string; spec: string; image: string };
 
 const products: Product[] = [
   {
-    name: "Samsung Galaxy Smartphone",
+    name: "Samsung Galaxy A54",
     category: "Smartphones",
-    spec: "5G • 8GB RAM • 256GB • AMOLED",
+    spec: "5G • 8GB • 256GB",
     image: "/Apple%20phones%20in%20showglass.jfif",
   },
   {
-    name: "Huawei Smartphone",
+    name: "Huawei Nova 9",
     category: "Smartphones",
-    spec: "6.5in • 4GB RAM • 128GB • Dual SIM",
+    spec: "6.5in • 4GB • 128GB",
     image: "/Apple%20phones%20in%20showglass.jfif",
   },
   {
-    name: "Premium Slim Laptop",
+    name: "Premium Laptop 14",
     category: "Laptops",
-    spec: "Core i7 • 16GB RAM • 512GB SSD • 14in",
+    spec: "i7 • 16GB • 512GB",
     image: "/benovertech%20Laptops%20in%20showglass",
   },
   {
-    name: "Student Laptop",
+    name: "Student Laptop 15",
     category: "Laptops",
-    spec: "Core i5 • 8GB RAM • 256GB SSD • 15.6in",
+    spec: "i5 • 8GB • 256GB",
     image: "/benovertech%20Laptops%20in%20showglass",
   },
   {
-    name: "Business Tablet",
+    name: "Business Tablet 11",
     category: "Tablets",
-    spec: "11in • Wi-Fi + LTE • Stylus ready",
+    spec: "11in • Wi‑Fi + LTE",
     image: "/All%20phone%20accosseries.png",
   },
   {
-    name: "Compact Tablet",
+    name: "Compact Tablet 8",
     category: "Tablets",
-    spec: "8in • 64GB • Portable for work and play",
+    spec: "8in • 64GB",
     image: "/All%20phone%20accosseries.png",
   },
   {
-    name: "Garmin Smartwatch",
+    name: "Garmin Forerunner",
     category: "Smartwatches",
-    spec: "GPS • Heart rate • Water resistant",
+    spec: "GPS • HR • 5ATM",
     image: "/benovertech%20smart%20watches.png",
   },
   {
-    name: "Amazfit Smartwatch",
+    name: "Amazfit Bip 5",
     category: "Smartwatches",
-    spec: "Bluetooth • Sleep tracking • 7-day battery",
+    spec: "BT • Sleep • 7 days",
     image: "/benovertech%20smart%20watches.png",
   },
   {
-    name: "JBL Wireless Earbuds",
+    name: "JBL Tune Buds",
     category: "Earbuds and Headphones",
-    spec: "Noise cancelling • 24h playtime • Bluetooth",
+    spec: "ANC • 24h • BT5.3",
     image: "/Benovertech%20Laptop%20Accessories%20Display.png",
   },
   {
-    name: "Oraimo Wireless Headphones",
+    name: "Oraimo FreePods",
     category: "Earbuds and Headphones",
-    spec: "Deep bass • Foldable • Long playtime",
+    spec: "Bass • Fold • 30h",
     image: "/Benovertech%20Laptop%20Accessories%20Display.png",
   },
   {
-    name: "Huawei Charger",
+    name: "Huawei 65W Charger",
     category: "Chargers",
-    spec: "20W–65W USB-C • Safe fast charging",
+    spec: "65W • USB‑C",
     image: "/Benovertech%20Laptop%20Accessories%20Display.png",
   },
   {
-    name: "Baseus Multi-Port Charger",
+    name: "Baseus 100W Charger",
     category: "Chargers",
-    spec: "Charge phone and laptop together",
+    spec: "100W • Multi‑port",
     image: "/Benovertech%20Laptop%20Accessories%20Display.png",
   },
   {
-    name: "Oraimo Power Bank",
+    name: "Oraimo 10K",
     category: "Power Banks",
-    spec: "10,000mAh • Dual output • Pocket size",
+    spec: "10,000mAh • 2‑out",
     image: "/All%20phone%20accosseries.png",
   },
   {
-    name: "Ugreen Power Bank",
+    name: "Ugreen 20K",
     category: "Power Banks",
-    spec: "20,000mAh • Fast charge • LED display",
+    spec: "20,000mAh • Fast charge",
     image: "/All%20phone%20accosseries.png",
   },
   {
-    name: "USB-C Charging Cable",
+    name: "USB‑C Cable 1M",
     category: "Cables",
-    spec: "Fast charge • Durable braided design",
+    spec: "1m • Fast charge",
     image: "/All%20phone%20accosseries.png",
   },
   {
-    name: "Phone Cable Set",
+    name: "Phone Cable Kit",
     category: "Cables",
-    spec: "Mixed connectors • Assorted lengths",
+    spec: "Mixed plugs • 2‑in‑1",
     image: "/All%20phone%20accosseries.png",
   },
   {
-    name: "Adjustable Phone Stand",
+    name: "Phone Stand",
     category: "Accessories",
-    spec: "Foldable • Aluminium • Desk friendly",
+    spec: "Foldable • Desk",
     image: "/All%20phone%20accosseries.png",
   },
   {
-    name: "Phone Case & Screen Guard",
+    name: "Screen Guard Kit",
     category: "Accessories",
-    spec: "Tempered glass • Shockproof protection",
+    spec: "Glass • Case",
     image: "/All%20phone%20accosseries.png",
   },
 ];
@@ -226,21 +226,21 @@ function TechStore() {
                   className="aspect-square w-full bg-secondary object-cover"
                 />
                 <div className="flex flex-1 flex-col p-5">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-gold-deep">
+                  <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-gold-deep">
                     {p.category}
                   </p>
-                  <h2 className="mt-1 text-base font-semibold">{p.name}</h2>
-                  <p className="mt-2 text-sm text-muted-foreground">{p.spec}</p>
-                  <ul className="mt-4 space-y-1 text-xs text-muted-foreground">
-                    <li className="font-semibold text-foreground">Available in our shop</li>
+                  <h2 className="mt-2 text-[1.05rem] font-semibold leading-tight">{p.name}</h2>
+                  <p className="mt-2 text-sm font-medium text-muted-foreground">{p.spec}</p>
+                  <ul className="mt-4 space-y-1 text-[11px] text-muted-foreground">
+                    <li className="font-semibold text-foreground">In stock</li>
                     <li className="font-semibold text-foreground">Fair prices</li>
-                    <li>Message us for today&apos;s price and availability</li>
+                    <li>Message for today&apos;s price</li>
                   </ul>
                   <WhatsAppButton
                     className="mt-5 w-full"
                     message={`Hello BENOVERTECH, I want to order: ${p.name}. Please share today's price and availability.`}
                   >
-                    Order through WhatsApp
+                    Order now
                   </WhatsAppButton>
                 </div>
               </article>

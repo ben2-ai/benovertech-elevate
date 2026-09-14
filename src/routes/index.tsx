@@ -156,8 +156,8 @@ function Home() {
             </p>
             <h1 className="hero-reveal mt-5 text-4xl font-black leading-[0.96] tracking-[-0.05em] text-white sm:text-5xl lg:text-6xl">
               <span className="block text-gradient-aurora">We Design,</span>
-              <span className="mt-1 block">We Print</span>
-              <span className="mt-1 block text-white">Home of Quality Gadgets</span>
+              <span className="mt-1 block">We print,</span>
+              <span className="mt-1 block text-white">We sell!</span>
             </h1>
             <p className="mt-6 max-w-xl text-base leading-[1.8] text-white/70">
               This is the official Benovertech website. We handle brand design, quality printing,

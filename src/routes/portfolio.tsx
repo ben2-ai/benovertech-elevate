@@ -74,17 +74,17 @@ function Portfolio() {
         </div>
       </section>
 
-      <Section>
-        <div className="flex flex-wrap justify-center gap-2">
+      <Section className="bg-[#f5f7f9]">
+        <div className="flex flex-wrap justify-center gap-3">
           {filters.map((f) => (
             <button
               key={f}
               type="button"
               onClick={() => setActive(f)}
-              className={`rounded-full px-4 py-2 text-sm font-medium transition-all ${
+              className={`rounded-full border px-5 py-2.5 text-sm font-medium transition-all ${
                 active === f
-                  ? "bg-gradient-gold text-primary-foreground shadow-soft"
-                  : "border border-border bg-card text-muted-foreground hover:text-foreground"
+                  ? "border-[#2b6ef6] bg-[#2b6ef6] text-white shadow-[0_8px_20px_rgba(43,110,246,0.22)]"
+                  : "border-[#dfe6ef] bg-white text-[#2b3748] hover:border-[#c7d8f8] hover:text-[#1f2d3d]"
               }`}
             >
               {f}
@@ -92,36 +92,25 @@ function Portfolio() {
           ))}
         </div>
 
-        <div className="mt-10 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
           {shown.map((w, i) => (
             <Reveal key={w.title} delay={i * 60}>
-              <figure className="card-surface h-full overflow-hidden">
+              <figure className="h-full overflow-hidden rounded-[1.75rem] border border-[#dfeaf4] bg-[#f7f9fb] shadow-[0_8px_25px_rgba(22,36,58,0.04)]">
                 <img
                   src={w.image}
                   alt={w.title}
                   width={900}
                   height={900}
                   loading="lazy"
-                  className="aspect-square w-full object-cover"
+                  className="aspect-[1.08] w-full object-cover"
                 />
-                <figcaption className="p-5">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-gold-deep">
+                <figcaption className="px-5 pb-6 pt-4">
+                  <p className="text-[0.72rem] font-bold uppercase tracking-[0.12em] text-[#2b6ef6]">
                     {w.category}
                   </p>
-                  <h2 className="mt-1 text-base font-semibold">{w.title}</h2>
-                  {"description" in w && (
-                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{w.description}</p>
-                  )}
-                  {"href" in w && (
-                    <a
-                      href={w.href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="mt-4 inline-flex text-sm font-semibold text-accent hover:underline"
-                    >
-                      Visit website <span aria-hidden="true">-&gt;</span>
-                    </a>
-                  )}
+                  <h2 className="mt-2 text-[1.05rem] font-semibold leading-snug text-[#1f2a37]">
+                    {w.title}
+                  </h2>
                 </figcaption>
               </figure>
             </Reveal>

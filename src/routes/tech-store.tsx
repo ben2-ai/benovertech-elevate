@@ -89,8 +89,8 @@ function TechStore() {
             Gadgets that keep you connected
           </h1>
           <p className="mt-6 text-base leading-relaxed text-white/70">
-            Phones, laptops, tablets, audio and everyday accessories — available in store at
-            friendly prices. Contact us for current price and availability.
+            Phones, laptops, tablets, audio, and everyday accessories, available in our shop at
+            fair prices. Message us for today&apos;s price and availability.
           </p>
         </div>
       </section>
@@ -104,13 +104,13 @@ function TechStore() {
               value={query}
               maxLength={80}
               onChange={(e) => setQuery(e.target.value)}
-              placeholder="Search products, e.g. laptop, earbuds"
-              aria-label="Search products"
+              placeholder="Search products, e.g. laptop or earbuds"
+              aria-label="Search for products"
               className="w-full rounded-full border border-input bg-card py-3 pl-11 pr-4 text-sm outline-none transition-shadow focus:ring-2 focus:ring-ring"
             />
           </div>
           <p className="text-sm text-muted-foreground md:text-right">
-            {filtered.length} item{filtered.length === 1 ? "" : "s"}
+            {filtered.length} product{filtered.length === 1 ? "" : "s"}
           </p>
         </div>
 
@@ -150,15 +150,15 @@ function TechStore() {
                   <h2 className="mt-1 text-base font-semibold">{p.name}</h2>
                   <p className="mt-2 text-sm text-muted-foreground">{p.spec}</p>
                   <ul className="mt-4 space-y-1 text-xs text-muted-foreground">
-                    <li className="font-semibold text-foreground">Available in Store</li>
-                    <li className="font-semibold text-foreground">Friendly Prices</li>
-                    <li>Contact us for current price and availability</li>
+                    <li className="font-semibold text-foreground">Available in our shop</li>
+                    <li className="font-semibold text-foreground">Fair prices</li>
+                    <li>Message us for today&apos;s price and availability</li>
                   </ul>
                   <WhatsAppButton
                     className="mt-5 w-full"
-                    message={`Hello BENOVERTECH, I would like to order: ${p.name}. Please share the current price and availability.`}
+                    message={`Hello BENOVERTECH, I want to order: ${p.name}. Please share today's price and availability.`}
                   >
-                    Order on WhatsApp
+                    Order through WhatsApp
                   </WhatsAppButton>
                 </div>
               </article>
@@ -168,24 +168,23 @@ function TechStore() {
 
         {filtered.length === 0 && (
           <p className="mt-12 text-center text-sm text-muted-foreground">
-            No product matches that search. Message us on WhatsApp and we will help you find it.
+            We could not find that product. Message us on WhatsApp and we will help you check.
           </p>
         )}
       </Section>
 
       <Section className="bg-secondary/50">
-        <SectionHead eyebrow="Peace of mind" title="Returns and warranty" center={false} />
+        <SectionHead eyebrow="For your peace of mind" title="Returns and warranty" center={false} />
         <Reveal className="mt-8">
           <div className="card-surface flex gap-4 p-6 sm:p-8">
             <ShieldCheck className="hidden h-6 w-6 shrink-0 text-gold-deep sm:block" />
             <p className="text-sm leading-relaxed text-muted-foreground">
-              BENOVERTECH is committed to customer satisfaction. Customers should inspect gadgets
-              and accessories at the point of purchase. Returns or exchanges may be considered
-              within 48 hours for products with verified faults, provided the item is unused, in its
-              original packaging, and accompanied by proof of purchase. Products damaged by misuse,
-              accidental damage, liquid exposure, software alteration, or physical damage are not
-              eligible for return. Warranty coverage, where available, depends on the manufacturer
-              or supplier and will be explained at the point of purchase.
+              Please check gadgets and accessories before you pay. We may accept returns or
+              exchanges within 48 hours for items with confirmed faults, as long as the item is
+              unused, in its original packaging, and you have proof of purchase. Items damaged by
+              misuse, accidents, liquid, software changes, or physical damage cannot be returned.
+              Where a warranty is available, the manufacturer or supplier terms will be explained
+              to you before purchase.
             </p>
           </div>
         </Reveal>

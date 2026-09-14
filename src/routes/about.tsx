@@ -49,15 +49,14 @@ function About() {
     <>
       <section className="bg-gradient-midnight px-4 py-16 sm:px-6 sm:py-24">
         <div className="mx-auto max-w-3xl text-center">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">About us</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">About us</p>
           <h1 className="mt-4 text-4xl font-extrabold text-white sm:text-5xl">
-            One trusted company. Three specialist divisions.
+              One trusted company. Three things we do well.
           </h1>
-          <p className="mt-6 text-base leading-relaxed text-white/70">
-            BENOVERTECH is a modern multiservice company that deals in all kinds of professional
-            graphic designs, quality printing, and sells reliable tech gadgets. We help individuals
-            and businesses build strong brands, produce standout print materials, and access the
-            right phones, laptops, gadgets, and accessories.
+            <p className="mt-6 text-base leading-relaxed text-white/70">
+              BENOVERTECH is a Lagos company for professional graphic design, quality printing, and
+              reliable tech gadgets. We help people and businesses build strong brands, produce neat
+              print materials, and get the right phones, laptops, gadgets, and accessories.
           </p>
         </div>
       </section>
@@ -75,23 +74,23 @@ function About() {
             />
           </Reveal>
           <Reveal delay={80}>
-            <h2 className="text-3xl font-bold sm:text-4xl">Company overview</h2>
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              Based in Ago Palace, Lagos, BENOVERTECH brings creative design, professional printing
-              and dependable technology under one roof. Whether you are starting a small business,
-              planning an event, or replacing a phone or laptop, you get clear advice, honest
-              pricing and work that is finished properly.
+              <h2 className="text-3xl font-bold sm:text-4xl">A quick look at us</h2>
+              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                Based in Ago Palace, Lagos, BENOVERTECH brings design, professional printing, and
+                dependable technology under one roof. Whether you are starting a small business,
+                planning an event, or changing your phone or laptop, you get clear advice, fair
+                pricing, and work that is finished properly.
             </p>
-            <p className="mt-4 text-base leading-relaxed text-muted-foreground">
-              Every project is handled by the division that knows it best, so you always speak to
-              people who understand exactly what you need.
+              <p className="mt-4 text-base leading-relaxed text-muted-foreground">
+                We give each job to the team that knows it best, so you speak with people who
+                understand exactly what you need.
             </p>
           </Reveal>
         </div>
       </Section>
 
       <Section className="bg-secondary/50">
-        <SectionHead eyebrow="Our divisions" title="Specialists in each area" />
+          <SectionHead eyebrow="Our services" title="People who know their work" />
         <div className="mt-12 grid gap-6 md:grid-cols-3">
           {divisions.map((d, i) => (
             <Reveal key={d.title} delay={i * 80}>
@@ -112,20 +111,19 @@ function About() {
           <Reveal>
             <div className="card-surface h-full p-8">
               <Target className="h-6 w-6 text-gold-deep" />
-              <h3 className="mt-4 text-2xl font-bold">Our mission</h3>
-              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-                To help individuals and businesses express ideas, build brands, access quality
-                printing, and find reliable technology.
+                <h3 className="mt-4 text-2xl font-bold">What drives us</h3>
+                <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+                  To help people and businesses bring their ideas to life, build strong brands, get
+                  quality printing, and find reliable technology.
               </p>
             </div>
           </Reveal>
           <Reveal delay={80}>
             <div className="card-surface h-full p-8">
               <Eye className="h-6 w-6 text-gold-deep" />
-              <h3 className="mt-4 text-2xl font-bold">Our vision</h3>
-              <p className="mt-3 text-base leading-relaxed text-muted-foreground">
-                To become a trusted creative, print, and technology partner for customers across
-                Lagos and beyond.
+                <h3 className="mt-4 text-2xl font-bold">Where we are going</h3>
+                <p className="mt-3 text-base leading-relaxed text-muted-foreground">
+                  To be the creative, printing, and technology partner people across Lagos can trust.
               </p>
             </div>
           </Reveal>

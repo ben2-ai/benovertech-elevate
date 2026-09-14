@@ -65,7 +65,7 @@ function Printing() {
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
     const lines = [
-      "Hello BENOVERTECH, I would like a print quote.",
+      "Hello BENOVERTECH, I want to get a printing price.",
       `Name: ${values["name"] ?? ""}`,
       `Phone: ${values["phone"] ?? ""}`,
       `Item: ${values["item"] ?? ""}`,
@@ -83,22 +83,22 @@ function Printing() {
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">Printing press</p>
           <h1 className="mt-4 text-4xl font-extrabold text-white sm:text-5xl">
-            Printing done neatly, delivered on time
+            Neat printing, ready when you need it
           </h1>
           <p className="mt-6 text-base leading-relaxed text-white/70">
-            From a single banner to thousands of flyers, we handle your print job with clean colour
-            and proper finishing.
+            From one banner to thousands of flyers, we handle your job with sharp colour and neat
+            finishing.
           </p>
           <div className="mt-8 flex justify-center">
             <WhatsAppButton message="Hello BENOVERTECH, I would like to request a print quote.">
-              Request a Print Quote
+              Ask for a printing price
             </WhatsAppButton>
           </div>
         </div>
       </section>
 
       <Section>
-        <SectionHead eyebrow="Services" title="What we print" />
+        <SectionHead eyebrow="Our services" title="What we can print for you" />
         <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s, i) => (
             <Reveal key={s.title} delay={i * 45}>
@@ -116,8 +116,8 @@ function Printing() {
       <Section className="bg-secondary/50">
         <SectionHead
           eyebrow="Get a price"
-          title="Request a print quote"
-          text="Fill the short form and we will continue the conversation on WhatsApp."
+          title="Tell us what you need printed"
+          text="Fill the short form and we will sort out the details with you on WhatsApp."
         />
         <Reveal className="mx-auto mt-10 max-w-2xl">
           <form onSubmit={submit} className="card-surface space-y-5 p-6 sm:p-8">
@@ -153,7 +153,7 @@ function Printing() {
               type="submit"
               className="w-full rounded-full bg-gradient-gold px-6 py-3 text-sm font-semibold text-primary-foreground shadow-soft transition-transform hover:-translate-y-0.5"
             >
-              Send quote request on WhatsApp
+              Send request on WhatsApp
             </button>
           </form>
         </Reveal>

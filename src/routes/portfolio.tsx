@@ -48,9 +48,9 @@ function Portfolio() {
       <section className="bg-gradient-midnight px-4 py-16 sm:px-6 sm:py-24">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">Portfolio</p>
-          <h1 className="mt-4 text-4xl font-extrabold text-white sm:text-5xl">Selected work</h1>
+          <h1 className="mt-4 text-4xl font-extrabold text-white sm:text-5xl">Some of our work</h1>
           <p className="mt-6 text-base leading-relaxed text-white/70">
-            A look at the standard we hold ourselves to across branding, design, printing and web.
+            Have a look at the kind of work we do across branding, design, printing, and web.
           </p>
         </div>
       </section>
@@ -96,7 +96,7 @@ function Portfolio() {
           ))}
         </div>
         <p className="mt-8 text-center text-xs text-muted-foreground">
-          These are placeholder visuals and can be replaced with real BENOVERTECH project photos.
+          These are sample visuals and can be replaced with real BENOVERTECH project photos.
         </p>
       </Section>
 

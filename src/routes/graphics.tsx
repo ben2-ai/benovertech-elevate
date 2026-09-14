@@ -33,15 +33,15 @@ export const Route = createFileRoute("/graphics")({
 });
 
 const services = [
-  { icon: PenTool, title: "Logo Design", text: "A clear, memorable mark that suits your business." },
-  { icon: Layers, title: "Brand Identity", text: "Colours, fonts and full brand kits for consistency." },
-  { icon: Brush, title: "Flyers and Posters", text: "Attention-grabbing artwork ready for print." },
-  { icon: Share2, title: "Social Media Designs", text: "Post and story designs that grow engagement." },
-  { icon: CreditCard, title: "Business Cards", text: "Professional cards that make the right impression." },
-  { icon: CalendarHeart, title: "Event Designs", text: "Weddings, birthdays, conferences and church programmes." },
+  { icon: PenTool, title: "Logo Design", text: "A clear, memorable logo that fits your business." },
+  { icon: Layers, title: "Brand Identity", text: "Colours, fonts, and a full brand kit that stays consistent." },
+  { icon: Brush, title: "Flyers and Posters", text: "Fine artwork that is ready to print." },
+  { icon: Share2, title: "Social Media Designs", text: "Post and story designs that help people notice you." },
+  { icon: CreditCard, title: "Business Cards", text: "Professional cards that leave a good impression." },
+  { icon: CalendarHeart, title: "Event Designs", text: "Weddings, birthdays, conferences, and church programmes." },
   { icon: Megaphone, title: "Advertising Materials", text: "Campaign artwork for online and offline adverts." },
-  { icon: Shirt, title: "Clothes Customization", text: "Custom t-shirts, polos, caps and branded wear." },
-  { icon: Sparkles, title: "Digital Marketing Creatives", text: "Ad banners and visuals built to convert." },
+  { icon: Shirt, title: "Clothes Customisation", text: "Custom T-shirts, polos, caps, and branded wear." },
+  { icon: Sparkles, title: "Digital Marketing Creatives", text: "Ad banners and visuals made to get results." },
 ];
 
 function Graphics() {
@@ -51,22 +51,22 @@ function Graphics() {
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">Creative</p>
           <h1 className="mt-4 text-4xl font-extrabold text-white sm:text-5xl">
-            Designs that make people look twice
+            Designs that make people take notice
           </h1>
           <p className="mt-6 text-base leading-relaxed text-white/70">
-            Tell us what you need and we will turn your idea into a clean, professional design —
-            ready for print or for posting online.
+            Tell us what you have in mind and we will turn it into a clean, professional design,
+            ready for printing or posting online.
           </p>
           <div className="mt-8 flex justify-center">
             <WhatsAppButton message="Hello BENOVERTECH, I would like to request a design quote.">
-              Request a Design Quote
+              Ask for a design price
             </WhatsAppButton>
           </div>
         </div>
       </section>
 
       <Section>
-        <SectionHead eyebrow="Services" title="What we design" />
+        <SectionHead eyebrow="Our services" title="What we can design for you" />
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {services.map((s, i) => (
             <Reveal key={s.title} delay={i * 55}>

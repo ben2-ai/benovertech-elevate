@@ -31,7 +31,7 @@ function Contact() {
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
     const text = [
-      "Hello BENOVERTECH, I would like to make an enquiry.",
+      "Hello BENOVERTECH, I want to make an enquiry.",
       `Name: ${values["name"] ?? ""}`,
       `Phone: ${values["phone"] ?? ""}`,
       `Email: ${values["email"] ?? ""}`,
@@ -45,9 +45,9 @@ function Contact() {
       <section className="bg-gradient-midnight px-4 py-16 sm:px-6 sm:py-24">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold">Contact</p>
-          <h1 className="mt-4 text-4xl font-extrabold text-white sm:text-5xl">Let's talk</h1>
+          <h1 className="mt-4 text-4xl font-extrabold text-white sm:text-5xl">Let&apos;s talk</h1>
           <p className="mt-6 text-base leading-relaxed text-white/70">
-            Visit the shop, call us, or send a WhatsApp message. We are happy to help.
+            Visit the shop, call us, or send a WhatsApp message. We are here to help.
           </p>
         </div>
       </section>
@@ -66,16 +66,16 @@ function Contact() {
               <div className="flex gap-4">
                 <Clock className="mt-1 h-5 w-5 shrink-0 text-gold-deep" />
                 <div className="min-w-0">
-                  <h2 className="text-base font-semibold">Opening hours</h2>
+                  <h2 className="text-base font-semibold">When we are open</h2>
                   <p className="mt-1 text-sm text-muted-foreground">
-                    Monday to Saturday, 8 AM to 6 PM
+                    Monday to Saturday, 8am to 6pm
                   </p>
                 </div>
               </div>
               <div className="flex gap-4">
                 <Phone className="mt-1 h-5 w-5 shrink-0 text-gold-deep" />
                 <div className="min-w-0">
-                  <h2 className="text-base font-semibold">Phone and WhatsApp</h2>
+                  <h2 className="text-base font-semibold">Call or WhatsApp</h2>
                   <div className="mt-2 flex flex-wrap gap-2">
                     {site.phones.map((p) => (
                       <a
@@ -101,13 +101,13 @@ function Contact() {
                   </a>
                 </div>
               </div>
-              <WhatsAppButton className="w-full">Chat on WhatsApp</WhatsAppButton>
+              <WhatsAppButton className="w-full">Chat with us</WhatsAppButton>
             </div>
           </Reveal>
 
           <Reveal delay={80}>
             <form onSubmit={submit} className="card-surface space-y-5 p-6 sm:p-8">
-              <h2 className="text-xl font-bold">Send a message</h2>
+              <h2 className="text-xl font-bold">Send us a message</h2>
               <label className="block text-sm font-medium">
                 Name <span className="text-destructive">*</span>
                 <input
@@ -154,7 +154,7 @@ function Contact() {
                 type="submit"
                 className="w-full rounded-full bg-gradient-gold px-6 py-3 text-sm font-semibold text-primary-foreground shadow-soft transition-transform hover:-translate-y-0.5"
               >
-                Send on WhatsApp
+                Send message on WhatsApp
               </button>
             </form>
           </Reveal>
@@ -162,12 +162,12 @@ function Contact() {
       </Section>
 
       <Section className="bg-secondary/50 pt-0">
-        <SectionHead eyebrow="Find us" title="Our location" text={site.address} />
+        <SectionHead eyebrow="Find us" title="Where to find us" text={site.address} />
         <Reveal className="mt-10">
           <div className="flex aspect-[16/9] w-full items-center justify-center rounded-3xl border border-dashed border-border bg-card text-center">
             <div className="px-6">
               <MapPin className="mx-auto h-8 w-8 text-gold-deep" />
-              <p className="mt-3 text-sm font-semibold">Map placeholder</p>
+              <p className="mt-3 text-sm font-semibold">Our map is coming soon</p>
               <p className="mt-1 text-sm text-muted-foreground">{site.address}</p>
             </div>
           </div>

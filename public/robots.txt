@@ -1,10 +1,10 @@
 User-agent: Googlebot
 Allow: /
-Sitemap: https://benovertech.com/sitemap.xml
+Sitemap: https://benovertech.vercel.app/sitemap.xml
 
 User-agent: Bingbot
 Allow: /
-Sitemap: https://benovertech.com/sitemap.xml
+Sitemap: https://benovertech.vercel.app/sitemap.xml
 
 User-agent: Twitterbot
 Allow: /
@@ -14,4 +14,4 @@ Allow: /
 
 User-agent: *
 Allow: /
-Sitemap: https://benovertech.com/sitemap.xml
+Sitemap: https://benovertech.vercel.app/sitemap.xml

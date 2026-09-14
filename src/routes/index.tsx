@@ -128,11 +128,8 @@ function Home() {
         <span className="pointer-events-none absolute -bottom-1/4 -right-1/4 h-full w-1/2 rounded-full bg-gold/10 blur-[120px]" />
         <div className="relative z-10 mx-auto grid max-w-6xl gap-10 px-4 pb-16 pt-14 sm:px-6 sm:pb-24 sm:pt-20 lg:grid-cols-2 lg:items-center">
           <div>
-            <span className="inline-flex items-center gap-2 rounded-full border border-teal/30 bg-teal/10 px-3 py-1 text-xs font-semibold uppercase tracking-widest text-teal">
-              Design • Printing • Tech
-            </span>
             <h1 className="mt-5 text-4xl font-extrabold leading-[1.08] text-white sm:text-5xl lg:text-6xl">
-              Good design. <span className="text-gradient-aurora">Neat printing.</span> Tech that works.
+              Good design. <span className="text-gold-deep">Neat printing.</span> Tech that works.
             </h1>
             <p className="mt-6 max-w-xl text-base leading-relaxed text-white/70">
               From brand designs and quality printing to phones, laptops, and accessories, we help

@@ -46,7 +46,7 @@ export function Nav() {
       >
         <Link to="/" className="flex min-w-0 items-center gap-3" onClick={() => setOpen(false)}>
           <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-border bg-white shadow-soft">
-            <img src="/favicon.png" alt="BENOVERTECH logo" className="h-7 w-7 object-contain" />
+            <img src="/Brand%20logo.png" alt="BENOVERTECH logo" className="h-7 w-7 object-contain" />
           </span>
           <span className="min-w-0">
             <span className="block truncate font-display text-base font-extrabold tracking-tight">

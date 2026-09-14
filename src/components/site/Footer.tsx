@@ -8,7 +8,7 @@ export function Footer() {
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-16 sm:px-6 md:grid-cols-3">
         <div>
           <div className="flex min-w-0 items-center gap-3">
-            <img src="/favicon.png" alt="BENOVERTECH logo" className="h-12 w-12 shrink-0 object-contain" loading="lazy" />
+            <img src="/Brand%20logo.png" alt="BENOVERTECH logo" className="h-12 w-12 shrink-0 object-contain" loading="lazy" />
             <div className="min-w-0">
               <p className="font-display text-lg font-extrabold text-foreground">BENOVERTECH</p>
               <p className="text-xs text-muted-foreground">{site.tagline}</p>

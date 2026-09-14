@@ -94,7 +94,7 @@ function About() {
           <Reveal>
             <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-soft">
               <img
-                src="/ceo.jpg"
+                src="/CEO%20BENOVERTECH%27S%20PHOTO.png"
                 alt="E.C. Benjamin, founder of BENOVERTECH"
                 width={768}
                 height={1024}

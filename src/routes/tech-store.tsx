@@ -30,6 +30,7 @@ const categories = [
   "Tablets",
   "Smartwatches",
   "Earbuds and Headphones",
+  "Wireless Microphones",
   "Chargers",
   "Power Banks",
   "Cables",
@@ -40,16 +41,28 @@ type Product = { name: string; category: string; spec: string; image: string };
 
 const products: Product[] = [
   {
-    name: "Samsung Galaxy A54",
+    name: "iPhone 15 Pro Max",
     category: "Smartphones",
-    spec: "5G • 8GB • 256GB",
-    image: "/Apple%20phones%20in%20showglass.jfif",
+    spec: "Pro camera • Premium finish",
+    image: "/Benovertech%27s%20iphone%2015pro%20max%20for%20sale.jpeg",
   },
   {
-    name: "Huawei Nova 9",
+    name: "iPhone 15",
     category: "Smartphones",
-    spec: "6.5in • 4GB • 128GB",
-    image: "/Apple%20phones%20in%20showglass.jfif",
+    spec: "Latest design • Great everyday phone",
+    image: "/Benovertech%27s%20iphone%2015%20for%20sale.jpeg",
+  },
+  {
+    name: "iPhone 14 Pro Max",
+    category: "Smartphones",
+    spec: "Pro camera • Large display",
+    image: "/Benovertech%27s%20iphone%2014pro%20max%20for%20sale.jpeg",
+  },
+  {
+    name: "iPhone 16 Pro",
+    category: "Smartphones",
+    spec: "Pro performance • Premium finish",
+    image: "/Benovertech%27s%20iphone%2016pro%20for%20sale.jpeg",
   },
   {
     name: "Premium Laptop 14",
@@ -100,6 +113,12 @@ const products: Product[] = [
     image: "/Benovertech%20Laptop%20Accessories%20Display.png",
   },
   {
+    name: "Wireless Microphone",
+    category: "Wireless Microphones",
+    spec: "Wireless audio • Portable kit",
+    image: "/Benovertech%27s%20wireless%20mic%20for%20sale.jpeg",
+  },
+  {
     name: "Huawei 65W Charger",
     category: "Chargers",
     spec: "65W • USB‑C",
@@ -112,10 +131,10 @@ const products: Product[] = [
     image: "/Benovertech%20Laptop%20Accessories%20Display.png",
   },
   {
-    name: "Oraimo 10K",
+    name: "20,000mAh Power Bank",
     category: "Power Banks",
-    spec: "10,000mAh • 2‑out",
-    image: "/All%20phone%20accosseries.png",
+    spec: "3.5 charges • Fast power backup",
+    image: "/Benovertech%27spowerbank%20for%20sale.jpeg",
   },
   {
     name: "Ugreen 20K",

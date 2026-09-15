@@ -3,7 +3,6 @@ import {
   ArrowRight,
   BadgeCheck,
   Headphones,
-  Laptop,
   Lightbulb,
   Palette,
   Printer,
@@ -12,11 +11,7 @@ import {
   Star,
   Timer,
   Wallet,
-  Watch,
 } from "lucide-react";
-import pLaptop from "@/assets/p-laptop.jpg";
-import pWatch from "@/assets/p-watch.jpg";
-import pAudio from "@/assets/p-audio.jpg";
 import { Reveal } from "@/components/site/Reveal";
 import {
   ContactStrip,
@@ -81,30 +76,30 @@ const reasons = [
 
 const gadgets = [
   {
-    image: "/benovertech%20iphone%20gadgets%20showglass",
-    name: "Smartphones",
-    spec: "Latest and neat pre-owned devices",
+    image: "/Benovertech%27s%20iphone%2015pro%20max%20for%20sale.jpeg",
+    name: "iPhones",
+    spec: "Real devices available now",
     icon: Smartphone,
   },
   {
-    image: "/benovertech%20Laptops%20in%20showglass",
-    name: "Laptops",
-    spec: "Work, school and business\nmachines",
-    icon: Laptop,
+    image: "/Benovertech%27s%20iphone%2016pro%20for%20sale.jpeg",
+    name: "Premium phones",
+    spec: "Clean, tested devices\nfor everyday life",
+    icon: Smartphone,
     featureCard: true,
   },
   {
-    image: "/Benovertech%20Smart%20watch.png",
-    name: "Smartwatches",
-    spec: "Fitness tracking and notifications",
-    icon: Watch,
-    featureCard: true,
-  },
-  {
-    image: "/benovertech%20earbuds.png",
-    name: "Earbuds & Headphones",
-    spec: "Wireless sound with strong bass",
+    image: "/Benovertech%27s%20wireless%20mic%20for%20sale.jpeg",
+    name: "Wireless microphones",
+    spec: "Clear audio for content\nand events",
     icon: Headphones,
+    featureCard: true,
+  },
+  {
+    image: "/Benovertech%27spowerbank%20for%20sale.jpeg",
+    name: "Power banks",
+    spec: "Reliable backup power\nwhen you need it",
+    icon: Wallet,
     featureCard: true,
   },
 ];

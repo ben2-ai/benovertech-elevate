@@ -5,6 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="google-site-verification" content="CwqBt4951BjyeWaYUA9m4sF0P6KFKPsj4CcgFnI3i_M" />
     <link rel="canonical" href="https://benovertech.vercel.app/" />
+    <script>
+      function loadScript(callback) {
+        var head = document.getElementsByTagName("head")[0];
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://tracker.metricool.com/resources/be.js";
+        script.onreadystatechange = callback;
+        script.onload = callback;
+        head.appendChild(script);
+      }
+
+      loadScript(function () {
+        beTracker.t({ hash: "58b8f38f21a2707ef4e13e1aa4fe9acd" });
+      });
+    </script>
     <title>BENOVERTECH</title>
   </head>
   <body>

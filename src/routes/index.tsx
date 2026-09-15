@@ -207,7 +207,7 @@ function Home() {
                 <div className="relative">
                   <img
                     src={s.image}
-                    alt={s.title}
+                    alt={s.title === "Graphic Design" ? "Graphic designing samples" : s.title}
                     width={1024}
                     height={768}
                     loading="lazy"

@@ -2,11 +2,6 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
 import { Reveal } from "@/components/site/Reveal";
 import { ContactStrip, Section } from "@/components/site/ui";
-import port1 from "@/assets/port-1.jpg";
-import port2 from "@/assets/port-2.jpg";
-import port3 from "@/assets/port-3.jpg";
-import port4 from "@/assets/port-4.jpg";
-import port6 from "@/assets/port-6.jpg";
 
 export const Route = createFileRoute("/portfolio")({
   head: () => ({
@@ -30,11 +25,11 @@ export const Route = createFileRoute("/portfolio")({
 const filters = ["All", "Branding", "Graphic Design", "Print Work", "Web Projects"] as const;
 
 const works = [
-  { image: port1, title: "Gold foil stationery set", category: "Branding" },
-  { image: port2, title: "Poster and flyer series", category: "Graphic Design" },
-  { image: port3, title: "Roll-up banner and signage", category: "Print Work" },
-  { image: port4, title: "Branded souvenir pack", category: "Branding" },
-  { image: port6, title: "Brochures and sticker print", category: "Print Work" },
+  { image: "/printed%20crads.jpeg", title: "Printed card designs", category: "Branding" },
+  { image: "/gadget%20flyer%201.jpg", title: "Poster and flyer designs", category: "Graphic Design" },
+  { image: "/Printed%20banner.jpg", title: "Printed banner design", category: "Print Work" },
+  { image: "/Graphic%20designing%20samples.png", title: "Graphic designing samples", category: "Graphic Design" },
+  { image: "/printed%20flyers.jpeg", title: "Completed flyer print job", category: "Print Work" },
   {
     image: "/project-babc.svg",
     title: "B.A.B.C Official Site",

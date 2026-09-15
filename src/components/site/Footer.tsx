@@ -15,8 +15,8 @@ export function Footer() {
             </div>
           </div>
           <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
-            {site.message} We handle your design, printing, and gadget needs in Lagos, with clear
-            advice and work we can all be proud of.
+            {site.message} We serve customers across Nigeria with clear advice and work we can all
+            be proud of.
           </p>
         </div>
 

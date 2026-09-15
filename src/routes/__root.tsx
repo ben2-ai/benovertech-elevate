@@ -79,11 +79,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "BENOVERTECH, Creative, Print & Technology in Lagos" },
+      { title: "BENOVERTECH | Graphic Design, Printing & Tech Gadgets Nationwide" },
       {
         name: "description",
         content:
-          "BENOVERTECH offers professional graphic design, quality printing, and reliable phones, laptops and accessories in Lagos.",
+          "BENOVERTECH brings creative graphic design, quality printing, and reliable phones, laptops and accessories to customers across Nigeria.",
       },
       { name: "author", content: "BENOVERTECH" },
       { property: "og:type", content: "website" },

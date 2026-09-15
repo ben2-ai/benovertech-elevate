@@ -29,17 +29,17 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "BENOVERTECH, Design, Printing & Tech Gadgets in Lagos" },
+      { title: "BENOVERTECH | Graphic Design, Printing & Tech Gadgets Nationwide" },
       {
         name: "description",
         content:
-          "Creative graphic design, quality printing and reliable phones, laptops and accessories from BENOVERTECH, Lagos, Nigeria.",
+          "BENOVERTECH brings creative graphic design, quality printing, and reliable phones, laptops and accessories to customers across Nigeria.",
       },
-      { property: "og:title", content: "BENOVERTECH, Design, Printing & Tech Gadgets in Lagos" },
+      { property: "og:title", content: "BENOVERTECH | Graphic Design, Printing & Tech Gadgets Nationwide" },
       {
         property: "og:description",
         content:
-          "Creative graphic design, quality printing and reliable phones, laptops and accessories in Lagos.",
+          "Creative design, quality printing, and reliable tech gadgets for customers across Nigeria.",
       },
     ],
   }),

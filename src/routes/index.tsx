@@ -146,9 +146,6 @@ function Home() {
         <span className="pointer-events-none absolute -bottom-1/4 -right-1/4 h-full w-1/2 rounded-full bg-gold/10 blur-[140px]" />
         <div className="relative z-10 mx-auto grid max-w-6xl gap-10 px-4 pb-16 pt-14 sm:px-6 sm:pb-24 sm:pt-20 lg:grid-cols-2 lg:items-center">
           <div>
-            <p className="glass-sheen gentle-pulse premium-glass inline-flex items-center rounded-full border border-white/20 bg-white/8 px-3 py-1 text-[10px] font-semibold uppercase tracking-[0.2em] text-black shadow-soft">
-              BENOVERTECH Lagos
-            </p>
             <h1 className="hero-reveal mt-5 text-4xl font-black leading-[0.96] tracking-[-0.05em] text-white sm:text-5xl lg:text-6xl">
               <span className="block text-gradient-aurora">We Design,</span>
               <span className="mt-1 block">We print,</span>

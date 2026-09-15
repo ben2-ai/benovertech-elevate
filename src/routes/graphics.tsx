@@ -45,10 +45,7 @@ const services = [
 ];
 
 const advertisingWork = [
-  { image: "/gadget%20flyer%201.jpg", title: "Website promotion flyer" },
-  { image: "/gadget%20flyer%202.jpg", title: "Gadget campaign flyer" },
-  { image: "/gadget%20flyer%203.jpg", title: "Smartphone promotion flyer" },
-  { image: "/gadget%20flyer%204.jpg", title: "Gadget brand flyer" },
+  { image: "/Graphic%20designing%20samples.png", title: "Graphic designing samples" },
 ];
 
 function Graphics() {

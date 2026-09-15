@@ -135,13 +135,13 @@ const products: Product[] = [
     name: "Huawei 65W Charger",
     category: "Chargers",
     spec: "65W • USB‑C",
-    image: "/Benovertech%27s%20super%20phone%20chargers%20for%20sale.jpeg",
+    image: "/Benovertech%27super%20phone%20chargers%20for%20sale.jpeg",
   },
   {
     name: "Baseus 100W Charger",
     category: "Chargers",
     spec: "100W • Multi‑port",
-    image: "/Benovertech%27s%20super%20phone%20chargers%20for%20sale.jpeg",
+    image: "/Benovertech%27super%20phone%20chargers%20for%20sale.jpeg",
   },
   {
     name: "20,000mAh Power Bank",
@@ -159,13 +159,13 @@ const products: Product[] = [
     name: "USB‑C Cable 1M",
     category: "Cables",
     spec: "1m • Fast charge",
-    image: "/Benovertech%27s%20super%20cords%20for%20sale.jpeg",
+    image: "/Benovertech%27super%20cords%20for%20sale.jpeg",
   },
   {
     name: "Phone Cable Kit",
     category: "Cables",
     spec: "Mixed plugs • 2‑in‑1",
-    image: "/Benovertech%27s%20super%20cords%20for%20sale.jpeg",
+    image: "/Benovertech%27super%20cords%20for%20sale.jpeg",
   },
   {
     name: "Phone Stand",

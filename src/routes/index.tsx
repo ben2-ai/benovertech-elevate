@@ -97,9 +97,9 @@ const gadgets = [
   },
   {
     image: "/image-1789811429530.png",
-    name: "Protective phone cases",
-    spec: "Camera protection with magnetic ring design",
-    icon: Smartphone,
+    name: "Desktop battery chargers",
+    spec: "Universal charging station for compatible batteries",
+    icon: Wallet,
     featureCard: true,
   },
 ];

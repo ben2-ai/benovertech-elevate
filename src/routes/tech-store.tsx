@@ -132,10 +132,10 @@ const products: Product[] = [
     image: "/image-1789811416962.png",
   },
   {
-    name: "iPhone 14 Pro Max Magnetic Case",
-    category: "Accessories",
-    spec: "Camera protection • Magnetic ring",
-    description: "Protective phone cases with a raised camera surround and magnetic charging ring design.",
+    name: "Lamac Desktop Battery Charger",
+    category: "Chargers",
+    spec: "Universal charging station • Multiple battery sizes",
+    description: "A compact desktop charger for compatible rechargeable batteries. Confirm battery compatibility before purchase.",
     image: "/image-1789811429530.png",
   },
   {

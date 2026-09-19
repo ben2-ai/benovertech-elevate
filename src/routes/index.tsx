@@ -6,6 +6,7 @@ import {
   Lightbulb,
   Palette,
   Printer,
+  Radio,
   ShieldCheck,
   Smartphone,
   Star,
@@ -77,9 +78,9 @@ const reasons = [
 const gadgets = [
   {
     image: "/image-1789811357696.png",
-    name: "Everyday earbuds",
-    spec: "Boxed audio options for music, calls, and commutes",
-    icon: Smartphone,
+    name: "Car Bluetooth MP3 players",
+    spec: "Wireless music and hands-free calls on the road",
+    icon: Radio,
   },
   {
     image: "/image-1789811381285.png",

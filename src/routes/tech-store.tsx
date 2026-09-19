@@ -35,6 +35,7 @@ const categories = [
   "Cables",
   "Accessories",
   "Fans",
+  "Car Accessories",
 ] as const;
 
 type Product = { name: string; category: string; spec: string; description: string; image: string };
@@ -83,10 +84,10 @@ const products: Product[] = [
     image: "/benovertech%20earbuds.png",
   },
   {
-    name: "Oraimo FreePods",
-    category: "Earbuds and Headphones",
-    spec: "Bass • Fold • 30h",
-    description: "Affordable wireless listening with strong bass and a compact everyday design.",
+    name: "Car Bluetooth MP3 Player",
+    category: "Car Accessories",
+    spec: "Bluetooth audio • Hands-free calls • FM support",
+    description: "A convenient in-car audio accessory for streaming music and handling calls through your vehicle sound system.",
     image: "/image-1789811357696.png",
   },
   {

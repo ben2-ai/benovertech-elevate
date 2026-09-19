@@ -63,10 +63,10 @@ const products: Product[] = [
     image: "/Benovertech%27s%20iphone%2014pro%20max%20for%20sale.jpeg",
   },
   {
-    name: "iPhone 16 Pro",
+    name: "iPhone 16 Plus",
     category: "Smartphones",
-    spec: "Pro performance • Premium finish",
-    description: "Premium Pro performance in a clean, modern design. Ask us about current availability.",
+    spec: "Large display • Premium finish",
+    description: "A stylish iPhone with a spacious display and dependable everyday performance. Ask us about current availability.",
     image: "/Benovertech%27s%20iphone%2016pro%20for%20sale.jpeg",
   },
   {

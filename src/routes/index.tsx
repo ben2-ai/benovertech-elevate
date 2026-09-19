@@ -76,30 +76,30 @@ const reasons = [
 
 const gadgets = [
   {
-    image: "/Benovertech%27s%20iphone%2015pro%20max%20for%20sale.jpeg",
-    name: "iPhones",
-    spec: "Real devices available now",
+    image: "/image-1789811357696.png",
+    name: "Everyday earbuds",
+    spec: "Boxed audio options for music, calls, and commutes",
     icon: Smartphone,
   },
   {
-    image: "/Benovertech%27s%20iphone%2016pro%20for%20sale.jpeg",
-    name: "Premium phones",
-    spec: "Clean, tested devices\nfor everyday life",
-    icon: Smartphone,
-    featureCard: true,
-  },
-  {
-    image: "/Benovertech%27s%20wireless%20mic%20for%20sale.jpeg",
-    name: "Wireless microphones",
-    spec: "Clear audio for content\nand events",
-    icon: Headphones,
-    featureCard: true,
-  },
-  {
-    image: "/Benovertech%27spowerbank%20for%20sale.jpeg",
-    name: "Power banks",
-    spec: "Reliable backup power\nwhen you need it",
+    image: "/image-1789811381285.png",
+    name: "Tarrot car chargers",
+    spec: "Power 3.0 charging with two USB outputs",
     icon: Wallet,
+    featureCard: true,
+  },
+  {
+    image: "/image-1789811405165.png",
+    name: "SHPLUS fast chargers",
+    spec: "Compact wall chargers for everyday devices",
+    icon: Wallet,
+    featureCard: true,
+  },
+  {
+    image: "/image-1789811429530.png",
+    name: "Protective phone cases",
+    spec: "Camera protection with magnetic ring design",
+    icon: Smartphone,
     featureCard: true,
   },
 ];

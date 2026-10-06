@@ -28,7 +28,7 @@ const works = [
   { image: "/printed%20crads.jpeg", title: "Printed card designs", category: "Branding" },
   { image: "/gadget%20flyer%201.jpg", title: "Poster and flyer designs", category: "Graphic Design" },
   { image: "/Printed%20banner.jpg", title: "Printed banner design", category: "Print Work" },
-  { image: "/Graphic%20designing%20samples.png", title: "Graphic designing samples", category: "Graphic Design" },
+  { image: "/Graphic%20designing%20samples.png", title: "Graphic design samples", category: "Graphic Design" },
   { image: "/printed%20flyers.jpeg", title: "Completed flyer print job", category: "Print Work" },
   {
     image: "/project-babc.svg",

@@ -45,7 +45,7 @@ const services = [
 ];
 
 const advertisingWork = [
-  { image: "/Graphic%20designing%20samples.png", title: "Graphic designing samples" },
+  { image: "/Graphic%20designing%20samples.png", title: "Graphic design samples" },
 ];
 
 function Graphics() {

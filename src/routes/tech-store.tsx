@@ -31,7 +31,6 @@ const categories = [
   "Wireless Microphones",
   "Chargers",
   "Batteries",
-  "Power Banks",
   "Cables",
   "Accessories",
   "Fans",
@@ -67,7 +66,7 @@ const products: Product[] = [
     category: "Smartphones",
     spec: "Large display • Premium finish",
     description: "A stylish iPhone with a spacious display and dependable everyday performance. Ask us about current availability.",
-    image: "/Benovertech%27s%20iphone%2016pro%20for%20sale.jpeg",
+    image: "/iphone-16-pink.jpeg",
   },
   {
     name: "Laptops",

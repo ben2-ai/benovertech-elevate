@@ -359,6 +359,17 @@ function Home() {
             </Reveal>
           ))}
         </div>
+        <div className="mt-8 text-center">
+          <a
+            href="https://maps.app.goo.gl/Btfh5Gt1q2wYnouw7"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-6 py-3 text-sm font-semibold shadow-soft transition-all hover:-translate-y-0.5 hover:border-gold/40"
+          >
+            Read our reviews on Google
+            <ArrowRight className="h-4 w-4" />
+          </a>
+        </div>
       </Section>
 
       <ContactStrip />

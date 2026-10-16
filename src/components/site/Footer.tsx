@@ -37,6 +37,16 @@ export function Footer() {
                 </Link>
               </li>
             ))}
+            <li>
+              <a
+                href="https://maps.app.goo.gl/Btfh5Gt1q2wYnouw7"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-colors hover:text-gold"
+              >
+                Google Reviews
+              </a>
+            </li>
           </ul>
         </div>
 

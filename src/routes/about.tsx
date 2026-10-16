@@ -18,7 +18,9 @@ export const Route = createFileRoute("/about")({
         content:
           "One trusted company with specialist divisions in graphic design, printing, and technology gadgets.",
       },
+      { property: "og:url", content: "https://benovertech.vercel.app/about" },
     ],
+    links: [{ rel: "canonical", href: "https://benovertech.vercel.app/about" }],
   }),
   component: About,
 });

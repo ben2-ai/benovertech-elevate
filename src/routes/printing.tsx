@@ -30,7 +30,9 @@ export const Route = createFileRoute("/printing")({
         property: "og:description",
         content: "Quality printing with neat finishing and quick delivery in Lagos.",
       },
+      { property: "og:url", content: "https://benovertech.vercel.app/printing" },
     ],
+    links: [{ rel: "canonical", href: "https://benovertech.vercel.app/printing" }],
   }),
   component: Printing,
 });

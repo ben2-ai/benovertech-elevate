@@ -79,15 +79,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "BENOVERTECH | Graphic Design, Printing & Tech Gadgets Nationwide" },
+      { title: "Benovertech | Gadgets, Graphic Design & Printing in Lagos" },
       {
         name: "description",
         content:
-          "BENOVERTECH brings creative graphic design, quality printing, and reliable phones, laptops and accessories to customers across Nigeria.",
+          "Shop gadgets and technology products from Benovertech in Lagos. We also offer graphic design and professional printing, serving customers across Nigeria.",
       },
-      { name: "author", content: "BENOVERTECH" },
+      { name: "author", content: "Benovertech" },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Benovertech" },
+      { property: "og:image", content: "https://benovertech.vercel.app/brand-logo.png" },
+      { property: "og:image:alt", content: "Benovertech brand logo" },
       { name: "twitter:card", content: "summary_large_image" },
+      { name: "twitter:image", content: "https://benovertech.vercel.app/brand-logo.png" },
     ],
     links: [
       {

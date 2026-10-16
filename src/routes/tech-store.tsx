@@ -18,7 +18,9 @@ export const Route = createFileRoute("/tech-store")({
         property: "og:description",
         content: "Reliable gadgets and accessories from BENOVERTECH, Lagos, Nigeria. Order on WhatsApp.",
       },
+      { property: "og:url", content: "https://benovertech.vercel.app/tech-store" },
     ],
+    links: [{ rel: "canonical", href: "https://benovertech.vercel.app/tech-store" }],
   }),
   component: TechStore,
 });

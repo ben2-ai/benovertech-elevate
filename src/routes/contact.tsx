@@ -19,7 +19,9 @@ export const Route = createFileRoute("/contact")({
         property: "og:description",
         content: "Address, opening hours, phone, WhatsApp and email for BENOVERTECH Lagos.",
       },
+      { property: "og:url", content: "https://benovertech.vercel.app/contact" },
     ],
+    links: [{ rel: "canonical", href: "https://benovertech.vercel.app/contact" }],
   }),
   component: Contact,
 });

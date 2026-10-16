@@ -17,7 +17,9 @@ export const Route = createFileRoute("/portfolio")({
         property: "og:description",
         content: "A selection of branding, design, print and web projects.",
       },
+      { property: "og:url", content: "https://benovertech.vercel.app/portfolio" },
     ],
+    links: [{ rel: "canonical", href: "https://benovertech.vercel.app/portfolio" }],
   }),
   component: Portfolio,
 });

@@ -27,7 +27,9 @@ export const Route = createFileRoute("/graphics")({
         property: "og:description",
         content: "Creative design that helps your brand look established and trustworthy.",
       },
+      { property: "og:url", content: "https://benovertech.vercel.app/graphics" },
     ],
+    links: [{ rel: "canonical", href: "https://benovertech.vercel.app/graphics" }],
   }),
   component: Graphics,
 });

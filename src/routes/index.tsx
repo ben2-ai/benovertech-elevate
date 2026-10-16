@@ -25,19 +25,21 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "BENOVERTECH | Graphic Design, Printing & Tech Gadgets Nationwide" },
+      { title: "Benovertech | Gadgets, Graphic Design & Printing in Lagos" },
       {
         name: "description",
         content:
-          "BENOVERTECH brings creative graphic design, quality printing, and reliable phones, laptops and accessories to customers across Nigeria.",
+          "Shop gadgets and technology products from Benovertech in Lagos. We also offer graphic design and professional printing, serving customers across Nigeria.",
       },
-      { property: "og:title", content: "BENOVERTECH | Graphic Design, Printing & Tech Gadgets Nationwide" },
+      { property: "og:title", content: "Benovertech | Gadgets, Graphic Design & Printing in Lagos" },
       {
         property: "og:description",
         content:
-          "Creative design, quality printing, and reliable tech gadgets for customers across Nigeria.",
+          "Shop gadgets and technology products from Benovertech in Lagos. We also offer graphic design and professional printing across Nigeria.",
       },
+      { property: "og:url", content: "https://benovertech.vercel.app/" },
     ],
+    links: [{ rel: "canonical", href: "https://benovertech.vercel.app/" }],
   }),
   component: Home,
 });
